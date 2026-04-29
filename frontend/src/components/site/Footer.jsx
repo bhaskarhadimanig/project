@@ -26,8 +26,8 @@ export default function Footer({ audience }) {
     <footer
       data-testid="site-footer"
       style={{
-        backgroundColor: "#0D0D0D",
-        borderTop: "1px solid #2A2A2A",
+        backgroundColor: "#0F0E0C",
+        borderTop: "1px solid #2A241E",
         padding: "64px 0",
       }}
     >
@@ -43,7 +43,7 @@ export default function Footer({ audience }) {
         >
           <div
             className="font-serif-display"
-            style={{ fontSize: 16, color: "#F5F0E8" }}
+            style={{ fontSize: 16, color: "#F4ECE0" }}
           >
             Supercore Longevity
           </div>
@@ -66,7 +66,7 @@ export default function Footer({ audience }) {
                   textDecoration: "none",
                   transition: "color 200ms ease",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "#C9A96E")}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#D87047")}
                 onMouseLeave={(e) =>
                   (e.currentTarget.style.color = "rgba(245,240,232,0.6)")
                 }
@@ -81,7 +81,7 @@ export default function Footer({ audience }) {
           style={{
             marginTop: 48,
             paddingTop: 32,
-            borderTop: "1px solid #1A1A1A",
+            borderTop: "1px solid #1C1814",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -108,7 +108,7 @@ export default function Footer({ audience }) {
                   textDecoration: "none",
                   transition: "color 200ms ease",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "#C9A96E")}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#D87047")}
                 onMouseLeave={(e) =>
                   (e.currentTarget.style.color = "rgba(245,240,232,0.45)")
                 }

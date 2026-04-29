@@ -52,7 +52,7 @@ export default function Clusters() {
       id="clusters"
       data-testid="section-clusters"
       className="sc-section"
-      style={{ backgroundColor: "#0D0D0D" }}
+      style={{ backgroundColor: "#0F0E0C" }}
     >
       <div className="sc-container">
         <div ref={ref} className="sc-reveal">
@@ -63,7 +63,7 @@ export default function Clusters() {
             className="font-serif-display"
             style={{
               fontSize: "clamp(32px, 5vw, 48px)",
-              color: "#F5F0E8",
+              color: "#F4ECE0",
               margin: 0,
               lineHeight: 1.15,
               fontWeight: 500,

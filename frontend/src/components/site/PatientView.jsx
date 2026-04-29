@@ -9,7 +9,7 @@ export default function PatientView() {
       data-testid="section-patient-placeholder"
       style={{
         minHeight: "calc(100vh - 116px)",
-        backgroundColor: "#0D0D0D",
+        backgroundColor: "#0F0E0C",
         display: "flex",
         alignItems: "center",
         paddingTop: 140,
@@ -34,7 +34,7 @@ export default function PatientView() {
           <h1
             className="font-serif-display"
             style={{
-              color: "#F5F0E8",
+              color: "#F4ECE0",
               fontSize: "clamp(40px, 6vw, 72px)",
               lineHeight: 1.12,
               margin: 0,
@@ -43,7 +43,7 @@ export default function PatientView() {
             }}
           >
             A new way to{" "}
-            <em style={{ color: "#C9A96E", fontStyle: "italic" }}>
+            <em style={{ color: "#D87047", fontStyle: "italic" }}>
               measure
             </em>{" "}
             and lengthen your healthspan.

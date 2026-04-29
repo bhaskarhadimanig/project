@@ -2,12 +2,14 @@ import { useState } from "react";
 import "@/App.css";
 import Navbar from "@/components/site/Navbar";
 import Hero from "@/components/site/Hero";
-import BiomarkerMarquee from "@/components/site/BiomarkerMarquee";
+import FoundingStats from "@/components/site/FoundingStats";
 import QuietFrustration from "@/components/site/QuietFrustration";
 import WhatSupercoreIs from "@/components/site/WhatSupercoreIs";
+import CinematicBanner from "@/components/site/CinematicBanner";
 import WhatThisChanges from "@/components/site/WhatThisChanges";
-import ProgramShowcase from "@/components/site/ProgramShowcase";
+import BiomarkerMarquee from "@/components/site/BiomarkerMarquee";
 import Clusters from "@/components/site/Clusters";
+import ProgramShowcase from "@/components/site/ProgramShowcase";
 import SpecialistsMosaic from "@/components/site/SpecialistsMosaic";
 import FirstNamed from "@/components/site/FirstNamed";
 import MovementStatement from "@/components/site/MovementStatement";
@@ -24,12 +26,14 @@ function App() {
       {audience === "doctors" ? (
         <main data-testid="doctor-page">
           <Hero />
-          <BiomarkerMarquee />
+          <FoundingStats />
           <QuietFrustration />
           <WhatSupercoreIs />
+          <CinematicBanner />
           <WhatThisChanges />
-          <ProgramShowcase />
+          <BiomarkerMarquee />
           <Clusters />
+          <ProgramShowcase />
           <SpecialistsMosaic />
           <FirstNamed />
           <MovementStatement />

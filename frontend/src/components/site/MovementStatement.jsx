@@ -24,7 +24,7 @@ export default function MovementStatement() {
       data-testid="section-movement"
       style={{
         minHeight: "100vh",
-        backgroundColor: "#0D0D0D",
+        backgroundColor: "#0F0E0C",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -42,7 +42,7 @@ export default function MovementStatement() {
               className="font-serif-display"
               style={{
                 fontSize: "clamp(28px, 4.4vw, 52px)",
-                color: l.italic ? "#C9A96E" : "#F5F0E8",
+                color: l.italic ? "#D87047" : "#F4ECE0",
                 fontStyle: l.italic ? "italic" : "normal",
                 lineHeight: 1.5,
                 margin: i === 0 ? 0 : "16px 0 0",

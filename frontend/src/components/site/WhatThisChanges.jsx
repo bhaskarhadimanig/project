@@ -7,7 +7,7 @@ const points = [
   },
   {
     lead: "Your programs command what they're worth.",
-    body: "A structured 8–12 week longevity program is a fundamentally different offering from an episodic consult. Specialists on Supercore charge ₹25,000–₹60,000 for programs that were previously billed at ₹1,500 a visit — because the structure, the tracking, and the measurable outcome justify it.",
+    body: "A structured 8–12 week longevity program is a fundamentally different offering from an episodic consult. Specialists on Supercore charge ₹25,000–₹60,000 for programs previously billed at ₹1,500 a visit — because the structure, the tracking, and the measurable outcome justify it.",
   },
   {
     lead: "You don't start from zero.",
@@ -15,121 +15,82 @@ const points = [
   },
 ];
 
-const PHOTO =
-  "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1100&q=80";
-
 export default function WhatThisChanges() {
   const ref = useReveal();
   return (
     <section
       data-testid="section-what-this-changes"
       className="sc-section"
-      style={{ backgroundColor: "#0D0D0D" }}
+      style={{ backgroundColor: "#0F0E0C" }}
     >
       <div className="sc-container">
         <div
           ref={ref}
           className="sc-reveal"
-          style={{
-            display: "grid",
-            gridTemplateColumns: "minmax(0, 5fr) minmax(0, 7fr)",
-            gap: 80,
-            alignItems: "start",
-          }}
+          style={{ maxWidth: 1080, margin: "0 auto" }}
         >
-          {/* Left: header + photo card */}
-          <div>
-            <div className="sc-eyebrow" style={{ marginBottom: 16 }}>
+          <div
+            style={{
+              textAlign: "center",
+              maxWidth: 720,
+              margin: "0 auto 80px",
+            }}
+          >
+            <div className="sc-eyebrow" style={{ marginBottom: 20 }}>
               What This Changes
             </div>
             <h2
               className="font-serif-display"
               style={{
-                fontSize: "clamp(28px, 4.5vw, 44px)",
-                color: "#F5F0E8",
+                fontSize: "clamp(36px, 5.4vw, 64px)",
+                color: "#F4ECE0",
                 margin: 0,
-                lineHeight: 1.15,
+                lineHeight: 1.05,
                 fontWeight: 500,
-                letterSpacing: "-0.01em",
+                letterSpacing: "-0.025em",
               }}
             >
               The same clinical work.{" "}
-              <em style={{ color: "#C9A96E", fontStyle: "italic" }}>
+              <em
+                style={{ color: "#F2A57E", fontStyle: "italic" }}
+              >
                 Seen differently.
               </em>
             </h2>
+          </div>
 
-            <div
-              style={{
-                marginTop: 40,
-                position: "relative",
-                aspectRatio: "4 / 5",
-                border: "1px solid #2A2A2A",
-                backgroundImage: `url(${PHOTO})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                overflow: "hidden",
-              }}
-            >
+          <div
+            style={{
+              display: "grid",
+              gap: 0,
+            }}
+          >
+            {points.map((p, i) => (
               <div
+                key={i}
+                data-testid={`change-point-${i}`}
                 style={{
-                  position: "absolute",
-                  inset: 0,
-                  background:
-                    "linear-gradient(180deg, rgba(13,13,13,0.1) 30%, rgba(13,13,13,0.92) 100%)",
+                  display: "grid",
+                  gridTemplateColumns: "120px minmax(0, 1fr) minmax(0, 2fr)",
+                  gap: 48,
+                  padding: "44px 0",
+                  borderTop: "1px solid rgba(244,236,224,0.1)",
+                  borderBottom:
+                    i === points.length - 1
+                      ? "1px solid rgba(244,236,224,0.1)"
+                      : "none",
+                  alignItems: "start",
                 }}
-              />
-              <div
-                style={{
-                  position: "absolute",
-                  bottom: 24,
-                  left: 24,
-                  right: 24,
-                }}
+                className="sc-change-row"
               >
-                <div
-                  className="font-sans-ui"
-                  style={{
-                    fontSize: 11,
-                    color: "#C9A96E",
-                    letterSpacing: "0.12em",
-                    textTransform: "uppercase",
-                    fontWeight: 600,
-                    marginBottom: 10,
-                  }}
-                >
-                  Field note
-                </div>
                 <div
                   className="font-serif-display"
                   style={{
-                    fontSize: 18,
-                    color: "#F5F0E8",
-                    fontStyle: "italic",
-                    lineHeight: 1.45,
-                    fontWeight: 400,
-                  }}
-                >
-                  "The structure I'd been carrying in my head for a decade —
-                  finally somewhere outside of it."
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Right: three points */}
-          <div style={{ display: "flex", flexDirection: "column", gap: 56 }}>
-            {points.map((p, i) => (
-              <div key={i} data-testid={`change-point-${i}`}>
-                <div
-                  className="font-sans-ui"
-                  style={{
-                    fontSize: 11,
-                    color: "rgba(245,240,232,0.4)",
-                    letterSpacing: "0.12em",
-                    textTransform: "uppercase",
-                    marginBottom: 12,
+                    fontSize: 56,
+                    color: "#D87047",
+                    lineHeight: 1,
                     fontWeight: 500,
+                    letterSpacing: "-0.02em",
                   }}
                 >
                   0{i + 1}
@@ -138,24 +99,22 @@ export default function WhatThisChanges() {
                   className="font-serif-display"
                   style={{
                     fontSize: 28,
-                    color: "#F5F0E8",
+                    color: "#F4ECE0",
                     margin: 0,
-                    lineHeight: 1.25,
+                    lineHeight: 1.2,
                     fontWeight: 500,
-                    letterSpacing: "-0.005em",
+                    letterSpacing: "-0.01em",
                   }}
                 >
-                  <span style={{ color: "#C9A96E", marginRight: 12 }}>—</span>
                   {p.lead}
                 </h3>
                 <p
                   className="font-sans-ui"
                   style={{
                     fontSize: 17,
-                    color: "rgba(245,240,232,0.72)",
+                    color: "rgba(244,236,224,0.7)",
                     lineHeight: 1.75,
-                    marginTop: 14,
-                    marginBottom: 0,
+                    margin: 0,
                     fontWeight: 400,
                   }}
                 >
@@ -168,10 +127,10 @@ export default function WhatThisChanges() {
       </div>
 
       <style>{`
-        @media (max-width: 1000px) {
-          [data-testid="section-what-this-changes"] .sc-reveal {
+        @media (max-width: 900px) {
+          .sc-change-row {
             grid-template-columns: 1fr !important;
-            gap: 48px !important;
+            gap: 16px !important;
           }
         }
       `}</style>
