@@ -51,7 +51,7 @@ export default function QuietFrustration() {
               lineHeight: 1.12,
               fontWeight: 500,
               letterSpacing: "-0.02em",
-              color: "#1A1612",
+              color: "#0A1628",
             }}
           >
             Three patterns every specialist already knows.
@@ -60,7 +60,7 @@ export default function QuietFrustration() {
             className="font-sans-ui"
             style={{
               fontSize: 16,
-              color: "rgba(26,22,18,0.6)",
+              color: "rgba(10,22,40,0.6)",
               lineHeight: 1.7,
               margin: "16px auto 0",
               maxWidth: 580,
@@ -92,14 +92,14 @@ export default function QuietFrustration() {
                   top: 124 + i * 14,
                   zIndex: 10 + i,
                   background: "#FFFFFF",
-                  border: "1px solid rgba(26,22,18,0.06)",
+                  border: "1px solid rgba(10,22,40,0.06)",
                   borderRadius: 28,
                   overflow: "hidden",
                   display: "grid",
                   gridTemplateColumns: "minmax(0, 1.05fr) minmax(0, 1fr)",
                   minHeight: 440,
                   boxShadow:
-                    "0 30px 80px -20px rgba(26,22,18,0.18), 0 0 0 1px rgba(26,22,18,0.03)",
+                    "0 30px 80px -20px rgba(10,22,40,0.18), 0 0 0 1px rgba(10,22,40,0.03)",
                 }}
                 className="sc-frust-card"
               >
@@ -124,7 +124,7 @@ export default function QuietFrustration() {
                         fontSize: 11,
                         letterSpacing: "0.18em",
                         textTransform: "uppercase",
-                        color: "#FF5C28",
+                        color: "#2563EB",
                         fontWeight: 700,
                         marginBottom: 24,
                       }}
@@ -133,7 +133,7 @@ export default function QuietFrustration() {
                         style={{
                           width: 28,
                           height: 1,
-                          background: "#FF5C28",
+                          background: "#2563EB",
                         }}
                       />
                       {c.n}
@@ -146,7 +146,7 @@ export default function QuietFrustration() {
                         margin: 0,
                         fontWeight: 500,
                         letterSpacing: "-0.018em",
-                        color: "#1A1612",
+                        color: "#0A1628",
                       }}
                     >
                       {c.title}
@@ -157,7 +157,7 @@ export default function QuietFrustration() {
                     style={{
                       fontSize: 16,
                       lineHeight: 1.7,
-                      color: "rgba(26,22,18,0.68)",
+                      color: "rgba(10,22,40,0.68)",
                       margin: 0,
                       fontWeight: 400,
                       maxWidth: 480,
@@ -195,7 +195,7 @@ export default function QuietFrustration() {
             style={{
               fontSize: "clamp(22px, 2.4vw, 30px)",
               fontStyle: "italic",
-              color: "#1A1612",
+              color: "#0A1628",
               margin: 0,
               lineHeight: 1.4,
               fontWeight: 400,
@@ -203,7 +203,7 @@ export default function QuietFrustration() {
             }}
           >
             There's no infrastructure built for the way you actually practise.{" "}
-            <span style={{ color: "#FF5C28" }}>So we built one.</span>
+            <span style={{ color: "#2563EB", fontStyle: "italic" }}>So we built one.</span>
           </p>
         </div>
       </div>

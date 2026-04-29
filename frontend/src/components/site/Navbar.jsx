@@ -39,9 +39,9 @@ export default function Navbar({ audience, setAudience }) {
         right: 0,
         zIndex: 50,
         transition: "background-color 300ms ease, border-color 300ms ease",
-        backgroundColor: scrolled ? "#161310" : "transparent",
+        backgroundColor: scrolled ? "#15243C" : "transparent",
         borderBottom: scrolled
-          ? "1px solid #2A241E"
+          ? "1px solid rgba(255,255,255,0.1)"
           : "1px solid transparent",
       }}
     >
@@ -63,7 +63,7 @@ export default function Navbar({ audience, setAudience }) {
           className="font-serif-display"
           style={{
             fontSize: 18,
-            color: "#F4ECE0",
+            color: "#FFFFFF",
             textDecoration: "none",
             letterSpacing: "-0.005em",
           }}
@@ -107,8 +107,8 @@ export default function Navbar({ audience, setAudience }) {
         data-testid="secondary-nav"
         style={{
           height: 44,
-          backgroundColor: "#161310",
-          borderBottom: "1px solid #2A241E",
+          backgroundColor: "#15243C",
+          borderBottom: "1px solid rgba(255,255,255,0.1)",
         }}
       >
         <div
@@ -129,15 +129,15 @@ export default function Navbar({ audience, setAudience }) {
               style={{
                 fontFamily: "Inter, sans-serif",
                 fontSize: 13,
-                color: i === 0 ? "#D87047" : "rgba(245,240,232,0.65)",
+                color: i === 0 ? "#DAFF6B" : "rgba(255,255,255,0.65)",
                 textDecoration: "none",
                 whiteSpace: "nowrap",
                 transition: "color 200ms ease",
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#F4ECE0")}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "#FFFFFF")}
               onMouseLeave={(e) =>
                 (e.currentTarget.style.color =
-                  i === 0 ? "#D87047" : "rgba(245,240,232,0.65)")
+                  i === 0 ? "#DAFF6B" : "rgba(255,255,255,0.65)")
               }
             >
               {l.label}

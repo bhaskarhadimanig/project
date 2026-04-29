@@ -19,8 +19,8 @@ export default function FoundingStats() {
       style={{
         paddingTop: 72,
         paddingBottom: 72,
-        borderTop: "1px solid rgba(26,22,18,0.06)",
-        borderBottom: "1px solid rgba(26,22,18,0.06)",
+        borderTop: "1px solid rgba(10,22,40,0.06)",
+        borderBottom: "1px solid rgba(10,22,40,0.06)",
       }}
     >
       <div className="sc-container">
@@ -41,15 +41,15 @@ export default function FoundingStats() {
               style={{
                 paddingLeft: i === 0 ? 0 : 32,
                 borderLeft:
-                  i === 0 ? "none" : "1px solid rgba(26,22,18,0.1)",
+                  i === 0 ? "none" : "1px solid rgba(10,22,40,0.1)",
               }}
             >
-              <div className="sc-stat-num accent">{s.num}</div>
+                <div className="sc-stat-num">{s.num}</div>
               <div
                 className="font-sans-ui"
                 style={{
                   fontSize: 14,
-                  color: "rgba(26,22,18,0.85)",
+                  color: "rgba(10,22,40,0.85)",
                   marginTop: 16,
                   fontWeight: 600,
                   letterSpacing: "0.02em",
@@ -61,7 +61,7 @@ export default function FoundingStats() {
                 className="font-sans-ui"
                 style={{
                   fontSize: 13,
-                  color: "rgba(26,22,18,0.55)",
+                  color: "rgba(10,22,40,0.55)",
                   marginTop: 4,
                   fontWeight: 400,
                 }}

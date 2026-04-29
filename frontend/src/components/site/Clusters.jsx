@@ -51,8 +51,8 @@ export default function Clusters() {
     <section
       id="clusters"
       data-testid="section-clusters"
-      className="sc-section"
-      style={{ backgroundColor: "#0F0E0C" }}
+      className="sc-section sc-light"
+      style={{ backgroundColor: "#FAF8F2" }}
     >
       <div className="sc-container">
         <div ref={ref} className="sc-reveal">
@@ -63,7 +63,7 @@ export default function Clusters() {
             className="font-serif-display"
             style={{
               fontSize: "clamp(32px, 5vw, 48px)",
-              color: "#F4ECE0",
+              color: "#0A1628",
               margin: 0,
               lineHeight: 1.15,
               fontWeight: 500,
@@ -77,7 +77,7 @@ export default function Clusters() {
             className="font-sans-ui"
             style={{
               fontSize: 18,
-              color: "rgba(245,240,232,0.65)",
+              color: "rgba(10,22,40,0.65)",
               marginTop: 16,
               marginBottom: 0,
               lineHeight: 1.6,
@@ -103,7 +103,7 @@ export default function Clusters() {
                   className="font-sans-ui"
                   style={{
                     fontSize: 14,
-                    color: "rgba(245,240,232,0.5)",
+                    color: "rgba(10,22,40,0.55)",
                     marginTop: 4,
                     marginBottom: 20,
                     fontWeight: 400,
@@ -137,7 +137,7 @@ export default function Clusters() {
             style={{
               fontSize: 14,
               fontStyle: "italic",
-              color: "rgba(245,240,232,0.45)",
+              color: "rgba(10,22,40,0.55)",
               textAlign: "center",
               marginTop: 56,
               marginBottom: 0,

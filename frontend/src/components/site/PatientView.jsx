@@ -9,7 +9,7 @@ export default function PatientView() {
       data-testid="section-patient-placeholder"
       style={{
         minHeight: "calc(100vh - 116px)",
-        backgroundColor: "#0F0E0C",
+        backgroundColor: "#0A1628",
         display: "flex",
         alignItems: "center",
         paddingTop: 140,
@@ -34,7 +34,7 @@ export default function PatientView() {
           <h1
             className="font-serif-display"
             style={{
-              color: "#F4ECE0",
+              color: "#FFFFFF",
               fontSize: "clamp(40px, 6vw, 72px)",
               lineHeight: 1.12,
               margin: 0,
@@ -43,7 +43,7 @@ export default function PatientView() {
             }}
           >
             A new way to{" "}
-            <em style={{ color: "#D87047", fontStyle: "italic" }}>
+            <em style={{ color: "#DAFF6B", fontStyle: "italic" }}>
               measure
             </em>{" "}
             and lengthen your healthspan.
@@ -53,7 +53,7 @@ export default function PatientView() {
             className="font-sans-ui"
             style={{
               fontSize: 18,
-              color: "rgba(245,240,232,0.72)",
+              color: "rgba(255,255,255,0.72)",
               lineHeight: 1.75,
               marginTop: 28,
               marginBottom: 0,
@@ -88,7 +88,7 @@ export default function PatientView() {
             className="font-sans-ui"
             style={{
               fontSize: 13,
-              color: "rgba(245,240,232,0.4)",
+              color: "rgba(255,255,255,0.4)",
               marginTop: 56,
               fontStyle: "italic",
               lineHeight: 1.7,

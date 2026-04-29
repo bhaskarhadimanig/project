@@ -20,8 +20,8 @@ export default function WhatThisChanges() {
   return (
     <section
       data-testid="section-what-this-changes"
-      className="sc-section"
-      style={{ backgroundColor: "#0F0E0C" }}
+      className="sc-section sc-on-dark"
+      style={{ backgroundColor: "#0A1628" }}
     >
       <div className="sc-container">
         <div
@@ -43,7 +43,7 @@ export default function WhatThisChanges() {
               className="font-serif-display"
               style={{
                 fontSize: "clamp(36px, 5.4vw, 64px)",
-                color: "#F4ECE0",
+                color: "#FFFFFF",
                 margin: 0,
                 lineHeight: 1.05,
                 fontWeight: 500,
@@ -52,7 +52,7 @@ export default function WhatThisChanges() {
             >
               The same clinical work.{" "}
               <em
-                style={{ color: "#F2A57E", fontStyle: "italic" }}
+                style={{ color: "#DAFF6B", fontStyle: "italic" }}
               >
                 Seen differently.
               </em>
@@ -74,10 +74,10 @@ export default function WhatThisChanges() {
                   gridTemplateColumns: "120px minmax(0, 1fr) minmax(0, 2fr)",
                   gap: 48,
                   padding: "44px 0",
-                  borderTop: "1px solid rgba(244,236,224,0.1)",
+                  borderTop: "1px solid rgba(255,255,255,0.1)",
                   borderBottom:
                     i === points.length - 1
-                      ? "1px solid rgba(244,236,224,0.1)"
+                      ? "1px solid rgba(255,255,255,0.1)"
                       : "none",
                   alignItems: "start",
                 }}
@@ -87,7 +87,7 @@ export default function WhatThisChanges() {
                   className="font-serif-display"
                   style={{
                     fontSize: 56,
-                    color: "#D87047",
+                    color: "#DAFF6B",
                     lineHeight: 1,
                     fontWeight: 500,
                     letterSpacing: "-0.02em",
@@ -99,7 +99,7 @@ export default function WhatThisChanges() {
                   className="font-serif-display"
                   style={{
                     fontSize: 28,
-                    color: "#F4ECE0",
+                    color: "#FFFFFF",
                     margin: 0,
                     lineHeight: 1.2,
                     fontWeight: 500,
@@ -112,7 +112,7 @@ export default function WhatThisChanges() {
                   className="font-sans-ui"
                   style={{
                     fontSize: 17,
-                    color: "rgba(244,236,224,0.7)",
+                    color: "rgba(255,255,255,0.7)",
                     lineHeight: 1.75,
                     margin: 0,
                     fontWeight: 400,

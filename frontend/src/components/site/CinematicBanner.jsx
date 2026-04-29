@@ -15,7 +15,7 @@ export default function CinematicBanner() {
       style={{
         position: "relative",
         minHeight: "75vh",
-        backgroundColor: "#0F0E0C",
+        backgroundColor: "#0A1628",
         overflow: "hidden",
         display: "flex",
         alignItems: "center",
@@ -56,7 +56,7 @@ export default function CinematicBanner() {
             className="font-serif-display"
             style={{
               fontSize: "clamp(32px, 4.6vw, 56px)",
-              color: "#F4ECE0",
+              color: "#FFFFFF",
               fontStyle: "italic",
               lineHeight: 1.2,
               margin: 0,
@@ -66,14 +66,14 @@ export default function CinematicBanner() {
           >
             "Your most rigorous clinical work — the multi-system, multi-month,
             slow-and-careful kind — is the{" "}
-            <span style={{ color: "#F2A57E" }}>least visible</span> thing about
+            <span style={{ color: "#DAFF6B" }}>least visible</span> thing about
             your practice."
           </p>
           <div
             className="font-sans-ui"
             style={{
               fontSize: 13,
-              color: "rgba(244,236,224,0.55)",
+              color: "rgba(255,255,255,0.55)",
               marginTop: 32,
               letterSpacing: "0.1em",
               textTransform: "uppercase",

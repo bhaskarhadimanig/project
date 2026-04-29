@@ -72,7 +72,7 @@ export default function WhatSupercoreIs() {
             style={{
               fontSize: 18,
               lineHeight: 1.7,
-              color: "rgba(26,22,18,0.65)",
+              color: "rgba(10,22,40,0.65)",
               margin: 0,
               maxWidth: 520,
               fontWeight: 400,
@@ -117,7 +117,7 @@ export default function WhatSupercoreIs() {
                     fontWeight: 700,
                     letterSpacing: "0.14em",
                     color: "#FFF7EE",
-                    background: "rgba(216,112,71,0.92)",
+                    background: "#0A1628",
                     padding: "6px 12px",
                     borderRadius: 999,
                   }}
@@ -150,7 +150,7 @@ export default function WhatSupercoreIs() {
                   className="font-sans-ui"
                   style={{
                     fontSize: 15,
-                    color: "rgba(26,22,18,0.65)",
+                    color: "rgba(10,22,40,0.65)",
                     lineHeight: 1.7,
                     margin: 0,
                     fontWeight: 400,

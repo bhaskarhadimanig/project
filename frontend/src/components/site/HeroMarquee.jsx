@@ -28,9 +28,9 @@ export default function HeroMarquee() {
     <div
       data-testid="hero-marquee"
       style={{
-        backgroundColor: "#0A0908",
-        borderTop: "1px solid rgba(244,236,224,0.08)",
-        borderBottom: "1px solid rgba(244,236,224,0.08)",
+        backgroundColor: "#0A1628",
+        borderTop: "1px solid rgba(255,255,255,0.08)",
+        borderBottom: "1px solid rgba(255,255,255,0.08)",
         padding: "20px 0",
         overflow: "hidden",
         position: "relative",
@@ -45,7 +45,7 @@ export default function HeroMarquee() {
           pointerEvents: "none",
           zIndex: 2,
           background:
-            "linear-gradient(90deg, #0A0908 0%, rgba(10,9,8,0) 8%, rgba(10,9,8,0) 92%, #0A0908 100%)",
+            "linear-gradient(90deg, #0A1628 0%, rgba(10,9,8,0) 8%, rgba(10,9,8,0) 92%, #0A1628 100%)",
         }}
       />
 
@@ -76,7 +76,7 @@ export default function HeroMarquee() {
                 size={18}
                 strokeWidth={1.6}
                 style={{
-                  color: "#FF8A5C",
+                  color: "#DAFF6B",
                   flexShrink: 0,
                 }}
               />
@@ -86,7 +86,7 @@ export default function HeroMarquee() {
                   fontSize: 14,
                   fontWeight: 500,
                   letterSpacing: "0.02em",
-                  color: "rgba(244,236,224,0.85)",
+                  color: "rgba(255,255,255,0.85)",
                 }}
               >
                 {it.text}

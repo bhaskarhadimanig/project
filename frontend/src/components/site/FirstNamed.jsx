@@ -1,7 +1,7 @@
 import useReveal from "../../hooks/useReveal";
 
 const BANNER =
-  "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=2400&q=85";
+  "https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=2400&q=85";
 
 const paragraphs = [
   "Longevity medicine in India is at an inflection point — about the same place functional medicine was in the US fifteen years ago. The specialists who plant their flag now will be the names the next generation of doctors refers to.",
@@ -21,6 +21,7 @@ export default function FirstNamed() {
       {/* Full-width banner image at top */}
       <div
         data-testid="first-named-banner"
+        className="sc-on-dark"
         style={{
           height: "60vh",
           minHeight: 420,
@@ -48,7 +49,7 @@ export default function FirstNamed() {
           <div ref={ref} className="sc-reveal" style={{ maxWidth: 720 }}>
             <div
               className="sc-eyebrow"
-              style={{ marginBottom: 20, color: "#F2A57E" }}
+              style={{ marginBottom: 20, color: "#DAFF6B" }}
             >
               Be Among the First Named
             </div>
@@ -56,7 +57,7 @@ export default function FirstNamed() {
               className="font-serif-display"
               style={{
                 fontSize: "clamp(38px, 5.4vw, 68px)",
-                color: "#F4ECE0",
+                color: "#FFFFFF",
                 margin: 0,
                 lineHeight: 1.05,
                 fontWeight: 500,
@@ -64,7 +65,7 @@ export default function FirstNamed() {
               }}
             >
               First-wave moves don't{" "}
-              <em style={{ color: "#F2A57E", fontStyle: "italic" }}>
+              <em style={{ color: "#DAFF6B", fontStyle: "italic" }}>
                 come around
               </em>{" "}
               twice.
@@ -106,7 +107,7 @@ export default function FirstNamed() {
                 className="font-serif-display"
                 style={{
                   fontSize: 36,
-                  color: "#D87047",
+                  color: "#DAFF6B",
                   lineHeight: 1,
                   fontWeight: 500,
                   letterSpacing: "-0.02em",
@@ -119,7 +120,7 @@ export default function FirstNamed() {
                 className="font-sans-ui"
                 style={{
                   fontSize: 16,
-                  color: "rgba(26,22,18,0.78)",
+                  color: "rgba(10,22,40,0.78)",
                   lineHeight: 1.75,
                   margin: 0,
                   fontWeight: 400,

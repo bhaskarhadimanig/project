@@ -26,7 +26,7 @@ export default function BiomarkerMarquee() {
       ref={ref}
       data-testid="biomarker-marquee"
       className="sc-reveal"
-      style={{ backgroundColor: "#0F0E0C" }}
+      style={{ backgroundColor: "#0A1628" }}
     >
       <div className="sc-marquee">
         <div className="sc-marquee-track">

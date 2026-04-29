@@ -22,9 +22,10 @@ export default function MovementStatement() {
     <section
       id="apply"
       data-testid="section-movement"
+      className="sc-on-dark"
       style={{
         minHeight: "100vh",
-        backgroundColor: "#0F0E0C",
+        backgroundColor: "#0A1628",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -42,7 +43,7 @@ export default function MovementStatement() {
               className="font-serif-display"
               style={{
                 fontSize: "clamp(28px, 4.4vw, 52px)",
-                color: l.italic ? "#D87047" : "#F4ECE0",
+                color: l.italic ? "#DAFF6B" : "#FFFFFF",
                 fontStyle: l.italic ? "italic" : "normal",
                 lineHeight: 1.5,
                 margin: i === 0 ? 0 : "16px 0 0",
@@ -62,7 +63,7 @@ export default function MovementStatement() {
           <a
             href={APPLY_URL}
             data-testid="movement-cta-apply"
-            className="sc-btn"
+            className="sc-btn-yellow"
           >
             Join the Founding Network
           </a>

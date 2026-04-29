@@ -44,8 +44,8 @@ export default function SpecialistsMosaic() {
   return (
     <section
       data-testid="section-specialists-mosaic"
-      className="sc-section"
-      style={{ backgroundColor: "#0F0E0C" }}
+      className="sc-section sc-on-dark"
+      style={{ backgroundColor: "#0A1628" }}
     >
       <div className="sc-container">
         <div
@@ -68,7 +68,7 @@ export default function SpecialistsMosaic() {
               className="font-serif-display"
               style={{
                 fontSize: "clamp(38px, 5.4vw, 68px)",
-                color: "#F4ECE0",
+                color: "#FFFFFF",
                 margin: 0,
                 lineHeight: 1.05,
                 fontWeight: 500,
@@ -76,7 +76,7 @@ export default function SpecialistsMosaic() {
               }}
             >
               The first names being{" "}
-              <em style={{ color: "#F2A57E", fontStyle: "italic" }}>
+              <em style={{ color: "#DAFF6B", fontStyle: "italic" }}>
                 etched in
               </em>
               .
@@ -87,7 +87,7 @@ export default function SpecialistsMosaic() {
             style={{
               fontSize: 17,
               lineHeight: 1.75,
-              color: "rgba(244,236,224,0.7)",
+              color: "rgba(255,255,255,0.7)",
               margin: 0,
               maxWidth: 520,
             }}
@@ -151,7 +151,7 @@ export default function SpecialistsMosaic() {
                     fontSize: 11,
                     letterSpacing: "0.14em",
                     textTransform: "uppercase",
-                    color: "#F2A57E",
+                    color: "#DAFF6B",
                     fontWeight: 600,
                     marginBottom: 10,
                   }}
@@ -162,7 +162,7 @@ export default function SpecialistsMosaic() {
                   className="font-serif-display"
                   style={{
                     fontSize: 24,
-                    color: "#F4ECE0",
+                    color: "#FFFFFF",
                     lineHeight: 1.2,
                     fontWeight: 500,
                     letterSpacing: "-0.005em",
@@ -184,14 +184,14 @@ export default function SpecialistsMosaic() {
             gap: 24,
             flexWrap: "wrap",
             paddingTop: 32,
-            borderTop: "1px solid rgba(244,236,224,0.08)",
+            borderTop: "1px solid rgba(255,255,255,0.08)",
           }}
         >
           <p
             className="font-sans-ui"
             style={{
               fontSize: 13,
-              color: "rgba(244,236,224,0.45)",
+              color: "rgba(255,255,255,0.45)",
               margin: 0,
               fontStyle: "italic",
               maxWidth: 600,

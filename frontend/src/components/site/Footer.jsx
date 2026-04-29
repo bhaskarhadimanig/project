@@ -26,8 +26,8 @@ export default function Footer({ audience }) {
     <footer
       data-testid="site-footer"
       style={{
-        backgroundColor: "#0F0E0C",
-        borderTop: "1px solid #2A241E",
+        backgroundColor: "#0A1628",
+        borderTop: "1px solid rgba(255,255,255,0.1)",
         padding: "64px 0",
       }}
     >
@@ -43,7 +43,7 @@ export default function Footer({ audience }) {
         >
           <div
             className="font-serif-display"
-            style={{ fontSize: 16, color: "#F4ECE0" }}
+            style={{ fontSize: 16, color: "#FFFFFF" }}
           >
             Supercore Longevity
           </div>
@@ -62,13 +62,13 @@ export default function Footer({ audience }) {
                 className="font-sans-ui"
                 style={{
                   fontSize: 14,
-                  color: "rgba(245,240,232,0.6)",
+                  color: "rgba(255,255,255,0.6)",
                   textDecoration: "none",
                   transition: "color 200ms ease",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "#D87047")}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#DAFF6B")}
                 onMouseLeave={(e) =>
-                  (e.currentTarget.style.color = "rgba(245,240,232,0.6)")
+                  (e.currentTarget.style.color = "rgba(255,255,255,0.6)")
                 }
               >
                 {l.label}
@@ -81,7 +81,7 @@ export default function Footer({ audience }) {
           style={{
             marginTop: 48,
             paddingTop: 32,
-            borderTop: "1px solid #1C1814",
+            borderTop: "1px solid #1F2E47",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -104,13 +104,13 @@ export default function Footer({ audience }) {
                 className="font-sans-ui"
                 style={{
                   fontSize: 13,
-                  color: "rgba(245,240,232,0.45)",
+                  color: "rgba(255,255,255,0.45)",
                   textDecoration: "none",
                   transition: "color 200ms ease",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "#D87047")}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#DAFF6B")}
                 onMouseLeave={(e) =>
-                  (e.currentTarget.style.color = "rgba(245,240,232,0.45)")
+                  (e.currentTarget.style.color = "rgba(255,255,255,0.45)")
                 }
               >
                 {l}
@@ -121,7 +121,7 @@ export default function Footer({ audience }) {
             className="font-sans-ui"
             style={{
               fontSize: 12,
-              color: "rgba(245,240,232,0.25)",
+              color: "rgba(255,255,255,0.25)",
             }}
           >
             supercorelongevity.com
