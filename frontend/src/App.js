@@ -9,7 +9,6 @@ import WhatSupercoreIs from "@/components/site/WhatSupercoreIs";
 import WhatThisChanges from "@/components/site/WhatThisChanges";
 import BiomarkerMarquee from "@/components/site/BiomarkerMarquee";
 import Clusters from "@/components/site/Clusters";
-import ProgramShowcase from "@/components/site/ProgramShowcase";
 import SpecialistsMosaic from "@/components/site/SpecialistsMosaic";
 import FirstNamed from "@/components/site/FirstNamed";
 import MovementStatement from "@/components/site/MovementStatement";
@@ -33,7 +32,6 @@ function App() {
           <WhatThisChanges />
           <BiomarkerMarquee />
           <Clusters />
-          <ProgramShowcase />
           <SpecialistsMosaic />
           <FirstNamed />
           <MovementStatement />

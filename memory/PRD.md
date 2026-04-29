@@ -33,12 +33,13 @@ Single-page marketing site for Supercore Longevity (supercorelongevity.com). Dua
   - Tab 01 Home: Cluster selector pills visual
   - Tab 02 Ownership: Two-column Yours/Supercore matrix + italic closer
   - Tab 03 Permanence: Cluster score chart, Longevity score transition, Biological Timeline
-- **Feb 2026 — Section 5 "What This Changes" carecore.io-style sticky layout**
-  - Removed old 3-column numbered scroll
-  - Left column sticky: title "The same clinical work. *Seen differently.*" + subtitle + "Three shifts" rule
-  - Right column scrollable stack of 3 items (Discovery / Economics / Head start), each with UI image + eyebrow + Inter 700 heading + body
-  - 3 AI-generated UI mockup images via Gemini Nano Banana saved to `/app/frontend/public/generated/` (depth-visible.png, program-value.png, head-start.png)
-  - Collapses to single column at <=1024px
+- **Feb 2026 — Section 5 "What This Changes" flat 3-column layout**
+  - Reverted from sticky-left / scroll-right to a flat grid: header block on top, 3 equal columns below each with UI mockup image + numbered eyebrow (01/02/03) + Inter 700 heading + body
+  - Added subtle hairline gradient divider between Section 4 and Section 5 (gethealthspan-style)
+  - 3 AI-generated UI images (Gemini Nano Banana) saved in `/app/frontend/public/generated/`
+  - Collapses to 1 column at ≤1080px
+- **Feb 2026 — Clusters section typography upgrade** — 3 group names (Amplifiers / Core Systems / Condition-Based) now render as Inter 700 ~clamp(26px,2.4vw,34px) headings with navy `#0A1628` and tight tracking; subtitles slightly enlarged to 15px / 1.55 line-height for legibility
+- **Feb 2026 — Removed `ProgramShowcase` ("Inside a Supercore Program") section** — App.js no longer imports or renders it; Clusters now flows directly into Founding Cohort (SpecialistsMosaic)
 
 ## Roadmap
 ### P1

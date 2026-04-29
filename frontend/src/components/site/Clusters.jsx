@@ -98,15 +98,28 @@ export default function Clusters() {
           >
             {groups.map((g) => (
               <div key={g.label} data-testid={`cluster-group-${g.label}`}>
-                <div className="sc-eyebrow">{g.label}</div>
+                <h3
+                  className="font-serif-display"
+                  style={{
+                    fontSize: "clamp(26px, 2.4vw, 34px)",
+                    color: "#0A1628",
+                    margin: 0,
+                    lineHeight: 1.15,
+                    fontWeight: 700,
+                    letterSpacing: "-0.025em",
+                  }}
+                >
+                  {g.label}
+                </h3>
                 <div
                   className="font-sans-ui"
                   style={{
-                    fontSize: 14,
-                    color: "rgba(10,22,40,0.55)",
-                    marginTop: 4,
-                    marginBottom: 20,
+                    fontSize: 15,
+                    color: "rgba(10,22,40,0.6)",
+                    marginTop: 8,
+                    marginBottom: 22,
                     fontWeight: 400,
+                    lineHeight: 1.55,
                   }}
                 >
                   {g.desc}

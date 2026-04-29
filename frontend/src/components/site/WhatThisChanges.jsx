@@ -33,131 +33,103 @@ export default function WhatThisChanges() {
     <section
       id="what-this-changes"
       data-testid="section-what-this-changes"
-      className="sc-section sc-on-dark"
+      className="sc-on-dark"
       style={{
         background:
           "radial-gradient(ellipse at 20% 10%, rgba(37,99,235,0.07) 0%, rgba(10,22,40,0) 50%), #0A1628",
         position: "relative",
+        padding: "0 0 120px",
       }}
     >
       <div className="sc-container">
+        {/* Divider between Section 4 and Section 5 — gethealthspan-style hairline */}
+        <div
+          data-testid="section-divider"
+          aria-hidden="true"
+          style={{
+            height: 1,
+            width: "100%",
+            background:
+              "linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.18) 50%, rgba(255,255,255,0) 100%)",
+            margin: "0 0 120px",
+          }}
+        />
+
+        {/* Header — flat, centered-left, no sticky */}
+        <div
+          ref={ref}
+          className="sc-reveal"
+          style={{ maxWidth: 820, marginBottom: 80 }}
+          data-testid="wtc-header"
+        >
+          <div
+            className="sc-eyebrow"
+            style={{ marginBottom: 22, color: "#DAFF6B" }}
+          >
+            What This Changes
+          </div>
+          <h2
+            className="font-serif-display"
+            style={{
+              fontSize: "clamp(40px, 5.4vw, 72px)",
+              color: "#FFFFFF",
+              margin: 0,
+              lineHeight: 1.04,
+              fontWeight: 700,
+              letterSpacing: "-0.035em",
+            }}
+          >
+            The same clinical work.{" "}
+            <em
+              style={{
+                fontFamily: "'Instrument Serif', serif",
+                color: "#DAFF6B",
+                fontStyle: "italic",
+                fontWeight: 400,
+                letterSpacing: "-0.01em",
+              }}
+            >
+              Seen differently.
+            </em>
+          </h2>
+          <p
+            className="font-sans-ui"
+            style={{
+              marginTop: 26,
+              fontSize: 18,
+              lineHeight: 1.65,
+              color: "rgba(255,255,255,0.7)",
+              fontWeight: 400,
+              maxWidth: 640,
+            }}
+          >
+            Three quiet shifts that change the economics, the visibility, and
+            the starting point of how you practice.
+          </p>
+        </div>
+
+        {/* 3-column flat grid — no scroll, no sticky */}
         <div
           className="sc-wtc-grid"
           style={{
             display: "grid",
-            gridTemplateColumns: "minmax(0, 0.9fr) minmax(0, 1.1fr)",
-            gap: 96,
+            gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
+            gap: 40,
             alignItems: "start",
           }}
+          data-testid="wtc-grid"
         >
-          {/* LEFT — sticky title + subtitle */}
-          <div className="sc-wtc-sticky" style={{ position: "sticky", top: 120 }}>
-            <div
-              ref={ref}
-              className="sc-reveal"
-              style={{ maxWidth: 520 }}
-              data-testid="wtc-header"
-            >
-              <div
-                className="sc-eyebrow"
-                style={{ marginBottom: 22, color: "#DAFF6B" }}
-              >
-                What This Changes
-              </div>
-              <h2
-                className="font-serif-display"
-                style={{
-                  fontSize: "clamp(40px, 5.2vw, 68px)",
-                  color: "#FFFFFF",
-                  margin: 0,
-                  lineHeight: 1.04,
-                  fontWeight: 700,
-                  letterSpacing: "-0.035em",
-                }}
-              >
-                The same clinical work.{" "}
-                <em
-                  style={{
-                    fontFamily: "'Instrument Serif', serif",
-                    color: "#DAFF6B",
-                    fontStyle: "italic",
-                    fontWeight: 400,
-                    letterSpacing: "-0.01em",
-                  }}
-                >
-                  Seen differently.
-                </em>
-              </h2>
-              <p
-                className="font-sans-ui"
-                style={{
-                  marginTop: 28,
-                  fontSize: 18,
-                  lineHeight: 1.65,
-                  color: "rgba(255,255,255,0.7)",
-                  fontWeight: 400,
-                  maxWidth: 460,
-                }}
-              >
-                Three quiet shifts that change the economics, the visibility,
-                and the starting point of how you practice.
-              </p>
-              <div
-                style={{
-                  marginTop: 40,
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: 12,
-                  fontSize: 11,
-                  letterSpacing: "0.18em",
-                  textTransform: "uppercase",
-                  color: "rgba(255,255,255,0.45)",
-                  fontFamily: "Inter, sans-serif",
-                  fontWeight: 700,
-                }}
-              >
-                <span
-                  style={{
-                    width: 28,
-                    height: 1,
-                    background: "rgba(218,255,107,0.6)",
-                  }}
-                />
-                Three shifts
-              </div>
-            </div>
-          </div>
-
-          {/* RIGHT — scrollable stack */}
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: 120,
-            }}
-            data-testid="wtc-stack"
-          >
-            {points.map((p, i) => (
-              <WtcItem key={p.n} item={p} index={i} />
-            ))}
-          </div>
+          {points.map((p, i) => (
+            <WtcCard key={p.n} item={p} index={i} />
+          ))}
         </div>
       </div>
 
       <style>{`
-        @media (max-width: 1024px) {
+        @media (max-width: 1080px) {
           .sc-wtc-grid {
             grid-template-columns: 1fr !important;
-            gap: 64px !important;
-          }
-          .sc-wtc-sticky {
-            position: static !important;
-            top: auto !important;
-          }
-        }
-        @media (max-width: 640px) {
-          .sc-wtc-item-head {
-            font-size: 28px !important;
+            gap: 56px !important;
           }
         }
       `}</style>
@@ -165,7 +137,7 @@ export default function WhatThisChanges() {
   );
 }
 
-function WtcItem({ item, index }) {
+function WtcCard({ item, index }) {
   const ref = useReveal();
   return (
     <article
@@ -175,19 +147,19 @@ function WtcItem({ item, index }) {
       style={{
         display: "flex",
         flexDirection: "column",
-        gap: 28,
+        gap: 24,
       }}
     >
-      {/* Image first */}
+      {/* UI mockup image */}
       <div
         style={{
           position: "relative",
-          borderRadius: 18,
+          borderRadius: 16,
           overflow: "hidden",
           border: "1px solid rgba(255,255,255,0.08)",
           background: "rgba(255,255,255,0.02)",
           boxShadow:
-            "0 30px 80px -20px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.02) inset",
+            "0 24px 60px -18px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.02) inset",
         }}
       >
         <img
@@ -210,13 +182,14 @@ function WtcItem({ item, index }) {
         style={{
           display: "inline-flex",
           alignItems: "center",
-          gap: 14,
+          gap: 12,
           fontSize: 11,
           letterSpacing: "0.18em",
           textTransform: "uppercase",
           color: "#DAFF6B",
           fontFamily: "Inter, sans-serif",
           fontWeight: 700,
+          marginTop: 8,
         }}
       >
         <span>{item.n}</span>
@@ -232,14 +205,14 @@ function WtcItem({ item, index }) {
 
       {/* Heading */}
       <h3
-        className="font-serif-display sc-wtc-item-head"
+        className="font-serif-display"
         style={{
-          fontSize: "clamp(28px, 2.8vw, 38px)",
+          fontSize: "clamp(22px, 1.75vw, 28px)",
           color: "#FFFFFF",
           margin: 0,
-          lineHeight: 1.15,
+          lineHeight: 1.2,
           fontWeight: 700,
-          letterSpacing: "-0.025em",
+          letterSpacing: "-0.02em",
         }}
       >
         {item.lead}
@@ -249,12 +222,11 @@ function WtcItem({ item, index }) {
       <p
         className="font-sans-ui"
         style={{
-          fontSize: 17,
+          fontSize: 15,
           color: "rgba(255,255,255,0.72)",
           lineHeight: 1.7,
           margin: 0,
           fontWeight: 400,
-          maxWidth: 620,
         }}
       >
         {item.body}
