@@ -33,11 +33,16 @@ Single-page marketing site for Supercore Longevity (supercorelongevity.com). Dua
   - Tab 01 Home: Cluster selector pills visual
   - Tab 02 Ownership: Two-column Yours/Supercore matrix + italic closer
   - Tab 03 Permanence: Cluster score chart, Longevity score transition, Biological Timeline
-  - Dark-navy bg with lime/blue radial glows, Inter 700 headings, Instrument Serif italics, data-testids on all tabs/panels, responsive collapse at 900px
+- **Feb 2026 — Section 5 "What This Changes" carecore.io-style sticky layout**
+  - Removed old 3-column numbered scroll
+  - Left column sticky: title "The same clinical work. *Seen differently.*" + subtitle + "Three shifts" rule
+  - Right column scrollable stack of 3 items (Discovery / Economics / Head start), each with UI image + eyebrow + Inter 700 heading + body
+  - 3 AI-generated UI mockup images via Gemini Nano Banana saved to `/app/frontend/public/generated/` (depth-visible.png, program-value.png, head-start.png)
+  - Collapses to single column at <=1024px
 
 ## Roadmap
 ### P1
-- Theme consistency audit of sections below Section 4 (WhatThisChanges, Clusters, ProgramShowcase, SpecialistsMosaic, FirstNamed, CinematicBanner, MovementStatement, Footer) — align to Cream/Navy/Lime/Blue palette + Inter 700
+- Theme consistency audit of sections below Section 5 (Clusters, ProgramShowcase, SpecialistsMosaic, FirstNamed, CinematicBanner, MovementStatement, Footer) — align to Cream/Navy/Lime/Blue palette + Inter 700
 
 ### P2 (on hold per user)
 - Audience switcher (Doctors ↔ Patients) — user explicitly said NOT to work on this yet
