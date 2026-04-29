@@ -15,6 +15,9 @@ const points = [
   },
 ];
 
+const PHOTO =
+  "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1100&q=80";
+
 export default function WhatThisChanges() {
   const ref = useReveal();
   return (
@@ -29,49 +32,129 @@ export default function WhatThisChanges() {
           className="sc-reveal"
           style={{
             display: "grid",
-            gridTemplateColumns: "minmax(0, 2fr) minmax(0, 3fr)",
+            gridTemplateColumns: "minmax(0, 5fr) minmax(0, 7fr)",
             gap: 80,
             alignItems: "start",
           }}
         >
-          <h2
-            className="font-serif-display"
-            style={{
-              fontSize: "clamp(28px, 4.5vw, 44px)",
-              color: "#F5F0E8",
-              margin: 0,
-              maxWidth: 320,
-              lineHeight: 1.2,
-              fontWeight: 500,
-              letterSpacing: "-0.01em",
-            }}
-          >
-            The same clinical work. Seen differently.
-          </h2>
+          {/* Left: header + photo card */}
+          <div>
+            <div className="sc-eyebrow" style={{ marginBottom: 16 }}>
+              What This Changes
+            </div>
+            <h2
+              className="font-serif-display"
+              style={{
+                fontSize: "clamp(28px, 4.5vw, 44px)",
+                color: "#F5F0E8",
+                margin: 0,
+                lineHeight: 1.15,
+                fontWeight: 500,
+                letterSpacing: "-0.01em",
+              }}
+            >
+              The same clinical work.{" "}
+              <em style={{ color: "#C9A96E", fontStyle: "italic" }}>
+                Seen differently.
+              </em>
+            </h2>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: 48 }}>
-            {points.map((p, i) => (
-              <div key={i} data-testid={`change-point-${i}`}>
-                <p
+            <div
+              style={{
+                marginTop: 40,
+                position: "relative",
+                aspectRatio: "4 / 5",
+                border: "1px solid #2A2A2A",
+                backgroundImage: `url(${PHOTO})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                overflow: "hidden",
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  background:
+                    "linear-gradient(180deg, rgba(13,13,13,0.1) 30%, rgba(13,13,13,0.92) 100%)",
+                }}
+              />
+              <div
+                style={{
+                  position: "absolute",
+                  bottom: 24,
+                  left: 24,
+                  right: 24,
+                }}
+              >
+                <div
                   className="font-sans-ui"
+                  style={{
+                    fontSize: 11,
+                    color: "#C9A96E",
+                    letterSpacing: "0.12em",
+                    textTransform: "uppercase",
+                    fontWeight: 600,
+                    marginBottom: 10,
+                  }}
+                >
+                  Field note
+                </div>
+                <div
+                  className="font-serif-display"
                   style={{
                     fontSize: 18,
                     color: "#F5F0E8",
-                    fontWeight: 600,
-                    margin: 0,
-                    lineHeight: 1.5,
+                    fontStyle: "italic",
+                    lineHeight: 1.45,
+                    fontWeight: 400,
                   }}
                 >
-                  <span style={{ color: "#C9A96E", marginRight: 8 }}>—</span>
+                  "The structure I'd been carrying in my head for a decade —
+                  finally somewhere outside of it."
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right: three points */}
+          <div style={{ display: "flex", flexDirection: "column", gap: 56 }}>
+            {points.map((p, i) => (
+              <div key={i} data-testid={`change-point-${i}`}>
+                <div
+                  className="font-sans-ui"
+                  style={{
+                    fontSize: 11,
+                    color: "rgba(245,240,232,0.4)",
+                    letterSpacing: "0.12em",
+                    textTransform: "uppercase",
+                    marginBottom: 12,
+                    fontWeight: 500,
+                  }}
+                >
+                  0{i + 1}
+                </div>
+                <h3
+                  className="font-serif-display"
+                  style={{
+                    fontSize: 28,
+                    color: "#F5F0E8",
+                    margin: 0,
+                    lineHeight: 1.25,
+                    fontWeight: 500,
+                    letterSpacing: "-0.005em",
+                  }}
+                >
+                  <span style={{ color: "#C9A96E", marginRight: 12 }}>—</span>
                   {p.lead}
-                </p>
+                </h3>
                 <p
                   className="font-sans-ui"
                   style={{
                     fontSize: 17,
                     color: "rgba(245,240,232,0.72)",
                     lineHeight: 1.75,
-                    marginTop: 10,
+                    marginTop: 14,
                     marginBottom: 0,
                     fontWeight: 400,
                   }}
@@ -85,10 +168,10 @@ export default function WhatThisChanges() {
       </div>
 
       <style>{`
-        @media (max-width: 900px) {
+        @media (max-width: 1000px) {
           [data-testid="section-what-this-changes"] .sc-reveal {
             grid-template-columns: 1fr !important;
-            gap: 40px !important;
+            gap: 48px !important;
           }
         }
       `}</style>

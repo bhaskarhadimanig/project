@@ -23,18 +23,21 @@ Single-page marketing website for Supercore Longevity (supercorelongevity.com). 
 - Sticky navbar (transparent → solid #141414 on scroll)
 - Audience switcher pill (For Doctors / For Patients) — toggles secondary nav, page content, and footer legal links
 - Secondary nav strip with audience-specific links
-- **Doctor view sections (all per spec):**
-  - Hero (full viewport, italic amber "right now")
+- **Doctor view sections (refreshed visual energy):**
+  - Hero with warm amber radial glow, editorial doctor portrait card, "Founding Network" tag pill, hero stat strip (24 / 3 / 12wk)
+  - Biomarker scrolling marquee (cluster names + biomarker shorthand)
   - Quiet Frustration (3 blocks + amber divider + italic close)
-  - What Supercore Is — three pillars with amber numerals (#141414 + amber top border)
-  - What This Changes — 2-col layout, amber em-dash lead lines
-  - Find Your Clusters — 3 grouped layers (Amplifiers / Core Systems / Condition-Based) with 24 sharp chips
-  - Be Among the First Named (#141414, amber pull quote)
-  - Movement Statement (full viewport, staggered IntersectionObserver reveal)
-- **Patient view:** clean coming-soon page with Playfair headline, italic accent, waitlist CTA placeholder
-- Footer with audience-specific legal links + supercorelongevity.com
-- IntersectionObserver-based reveal/stagger animations
-- Mobile responsive (collapses to single-column at <768px / <900px)
+  - What Supercore Is — three pillars with amber numerals
+  - What This Changes — 2-col with portrait "Field note" photo card
+  - **Program Showcase (LIGHT CREAM section)** — three editorial photo cards walking through Week 0 / 1–11 / 12 cadence
+  - Find Your Clusters — 24 sharp chips in 3 grouped layers
+  - **Specialists Mosaic** — 6 photo tiles (city + cluster) in asymmetric grid
+  - Be Among the First Named with atmospheric background imagery
+  - Movement Statement (full viewport, staggered reveal)
+- 8+ contextual editorial photos via Unsplash CDN (verified loading)
+- IntersectionObserver-based reveal/stagger animations + scrolling marquee
+- Mobile responsive (collapses to single-column at <768px / <900px / <1000px)
+- Light + dark section alternation for natural rhythm
 - All interactive/key elements have `data-testid` attributes
 
 ## Backlog / Known Placeholders
