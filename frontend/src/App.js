@@ -2,6 +2,7 @@ import { useState } from "react";
 import "@/App.css";
 import Navbar from "@/components/site/Navbar";
 import Hero from "@/components/site/Hero";
+import HeroMarquee from "@/components/site/HeroMarquee";
 import FoundingStats from "@/components/site/FoundingStats";
 import QuietFrustration from "@/components/site/QuietFrustration";
 import WhatSupercoreIs from "@/components/site/WhatSupercoreIs";
@@ -25,6 +26,7 @@ function App() {
       {audience === "doctors" ? (
         <main data-testid="doctor-page">
           <Hero />
+          <HeroMarquee />
           <FoundingStats />
           <QuietFrustration />
           <WhatSupercoreIs />

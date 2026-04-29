@@ -5,7 +5,7 @@ const cards = [
     n: "01",
     title: "Records that quietly vanish.",
     body: "Your best 12-week patient came back two years later, and nothing of what worked the first time was anywhere on record. The protocol, the markers, the slow win — gone with the visit.",
-    img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1400&q=88",
+    img: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=1400&q=88",
   },
   {
     n: "02",
@@ -17,7 +17,7 @@ const cards = [
     n: "03",
     title: "The rigour goes unseen.",
     body: "Your most rigorous clinical work — the multi-system, multi-month, slow-and-careful kind — is the least visible thing about your practice. Nobody outside the room knows what you actually do.",
-    img: "https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=1400&q=88",
+    img: "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=1400&q=88",
   },
 ];
 
@@ -27,7 +27,7 @@ export default function QuietFrustration() {
     <section
       data-testid="section-quiet-frustration"
       className="sc-light"
-      style={{ paddingTop: 140, paddingBottom: 160 }}
+      style={{ paddingTop: 88, paddingBottom: 112 }}
     >
       <div className="sc-container">
         {/* Section header */}
@@ -36,17 +36,17 @@ export default function QuietFrustration() {
           className="sc-reveal"
           style={{
             maxWidth: 760,
-            margin: "0 auto 80px",
+            margin: "0 auto 56px",
             textAlign: "center",
           }}
         >
-          <div className="sc-eyebrow" style={{ marginBottom: 18 }}>
+          <div className="sc-eyebrow" style={{ marginBottom: 14 }}>
             The Quiet Frustration
           </div>
           <h2
             className="font-serif-display"
             style={{
-              fontSize: "clamp(32px, 4vw, 48px)",
+              fontSize: "clamp(30px, 3.6vw, 44px)",
               margin: 0,
               lineHeight: 1.12,
               fontWeight: 500,
@@ -59,11 +59,11 @@ export default function QuietFrustration() {
           <p
             className="font-sans-ui"
             style={{
-              fontSize: 17,
+              fontSize: 16,
               color: "rgba(26,22,18,0.6)",
               lineHeight: 1.7,
-              margin: "20px auto 0",
-              maxWidth: 600,
+              margin: "16px auto 0",
+              maxWidth: 580,
               fontWeight: 400,
             }}
           >
@@ -82,7 +82,7 @@ export default function QuietFrustration() {
               key={c.n}
               data-testid={`frustration-wrapper-${i}`}
               style={{
-                paddingBottom: i < cards.length - 1 ? "32vh" : 0,
+                paddingBottom: i < cards.length - 1 ? "18vh" : 0,
               }}
             >
               <article
@@ -97,7 +97,7 @@ export default function QuietFrustration() {
                   overflow: "hidden",
                   display: "grid",
                   gridTemplateColumns: "minmax(0, 1.05fr) minmax(0, 1fr)",
-                  minHeight: 460,
+                  minHeight: 440,
                   boxShadow:
                     "0 30px 80px -20px rgba(26,22,18,0.18), 0 0 0 1px rgba(26,22,18,0.03)",
                 }}
@@ -106,11 +106,11 @@ export default function QuietFrustration() {
                 {/* LEFT — content */}
                 <div
                   style={{
-                    padding: "56px 56px 52px",
+                    padding: "52px 52px 48px",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
-                    gap: 32,
+                    gap: 28,
                   }}
                   className="sc-frust-card-text"
                 >
@@ -126,7 +126,7 @@ export default function QuietFrustration() {
                         textTransform: "uppercase",
                         color: "#FF5C28",
                         fontWeight: 700,
-                        marginBottom: 28,
+                        marginBottom: 24,
                       }}
                     >
                       <span
@@ -141,7 +141,7 @@ export default function QuietFrustration() {
                     <h3
                       className="font-serif-display"
                       style={{
-                        fontSize: "clamp(28px, 3vw, 40px)",
+                        fontSize: "clamp(26px, 2.6vw, 36px)",
                         lineHeight: 1.12,
                         margin: 0,
                         fontWeight: 500,
@@ -155,7 +155,7 @@ export default function QuietFrustration() {
                   <p
                     className="font-sans-ui"
                     style={{
-                      fontSize: 17,
+                      fontSize: 16,
                       lineHeight: 1.7,
                       color: "rgba(26,22,18,0.68)",
                       margin: 0,
@@ -174,7 +174,7 @@ export default function QuietFrustration() {
                     backgroundImage: `url(${c.img})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    minHeight: 460,
+                    minHeight: 440,
                   }}
                 />
               </article>
@@ -186,14 +186,14 @@ export default function QuietFrustration() {
         <div
           style={{
             maxWidth: 720,
-            margin: "120px auto 0",
+            margin: "72px auto 0",
             textAlign: "center",
           }}
         >
           <p
             className="font-serif-display"
             style={{
-              fontSize: "clamp(24px, 2.6vw, 32px)",
+              fontSize: "clamp(22px, 2.4vw, 30px)",
               fontStyle: "italic",
               color: "#1A1612",
               margin: 0,

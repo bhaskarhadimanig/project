@@ -16,7 +16,7 @@ function DeviceMockup() {
       style={{
         position: "relative",
         width: "100%",
-        maxWidth: 480,
+        maxWidth: 384,
         margin: "0 auto",
         aspectRatio: "9 / 13",
       }}
@@ -169,19 +169,19 @@ function DeviceMockup() {
         </div>
       </div>
 
-      {/* Floating "Active Program" card */}
+      {/* Floating "Active Program" card — smaller, repositioned to not overlap face */}
       <div
         data-testid="program-card-floating"
         style={{
           position: "absolute",
-          right: "-10%",
-          bottom: "8%",
-          width: "62%",
-          maxWidth: 280,
+          right: "-14%",
+          bottom: "-6%",
+          width: "58%",
+          maxWidth: 224,
           background: "#161310",
           border: "1px solid rgba(255,92,40,0.32)",
-          borderRadius: 20,
-          padding: 22,
+          borderRadius: 18,
+          padding: 18,
           boxShadow:
             "0 24px 60px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,92,40,0.05)",
           zIndex: 3,
@@ -192,12 +192,12 @@ function DeviceMockup() {
         <div
           className="font-sans-ui"
           style={{
-            fontSize: 10,
+            fontSize: 9,
             letterSpacing: "0.2em",
             textTransform: "uppercase",
             color: "#FF8A5C",
             fontWeight: 700,
-            marginBottom: 12,
+            marginBottom: 10,
           }}
         >
           Active Program
@@ -205,7 +205,7 @@ function DeviceMockup() {
         <div
           className="font-serif-display"
           style={{
-            fontSize: 22,
+            fontSize: 18,
             color: "#F4ECE0",
             lineHeight: 1.2,
             margin: 0,
@@ -220,22 +220,22 @@ function DeviceMockup() {
 
         <div
           style={{
-            marginTop: 16,
+            marginTop: 12,
             display: "flex",
             alignItems: "center",
-            gap: 10,
+            gap: 8,
           }}
         >
           <span
             className="font-sans-ui"
             style={{
-              fontSize: 10,
+              fontSize: 9,
               fontWeight: 700,
               letterSpacing: "0.16em",
               color: "#FF8A5C",
               border: "1px solid rgba(255,92,40,0.5)",
-              borderRadius: 6,
-              padding: "5px 9px",
+              borderRadius: 5,
+              padding: "4px 7px",
             }}
           >
             12 WEEKS
@@ -243,7 +243,7 @@ function DeviceMockup() {
           <span
             className="font-sans-ui"
             style={{
-              fontSize: 12,
+              fontSize: 11,
               color: "rgba(244,236,224,0.78)",
               fontWeight: 500,
             }}
@@ -255,8 +255,8 @@ function DeviceMockup() {
         <div
           className="font-sans-ui"
           style={{
-            marginTop: 18,
-            fontSize: 9.5,
+            marginTop: 14,
+            fontSize: 8.5,
             letterSpacing: "0.16em",
             textTransform: "uppercase",
             color: "rgba(244,236,224,0.5)",
@@ -270,8 +270,8 @@ function DeviceMockup() {
         <svg
           viewBox="0 0 220 70"
           width="100%"
-          height="60"
-          style={{ marginTop: 8, display: "block" }}
+          height="48"
+          style={{ marginTop: 6, display: "block" }}
         >
           <defs>
             <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
@@ -279,7 +279,6 @@ function DeviceMockup() {
               <stop offset="100%" stopColor="#FF5C28" stopOpacity="0" />
             </linearGradient>
           </defs>
-          {/* Target dashed line */}
           <line
             x1="0"
             y1="14"
@@ -300,12 +299,10 @@ function DeviceMockup() {
           >
             TARGET
           </text>
-          {/* Filled curve */}
           <path
             d="M0,62 C40,58 70,52 100,42 S160,24 220,18 L220,70 L0,70 Z"
             fill="url(#chartFill)"
           />
-          {/* Curve line */}
           <path
             d="M0,62 C40,58 70,52 100,42 S160,24 220,18"
             stroke="#FF8A5C"
@@ -313,13 +310,12 @@ function DeviceMockup() {
             fill="none"
             strokeLinecap="round"
           />
-          {/* End dot */}
           <circle cx="220" cy="18" r="3" fill="#FF8A5C" />
         </svg>
 
         <div
           style={{
-            marginTop: 14,
+            marginTop: 10,
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
@@ -328,7 +324,7 @@ function DeviceMockup() {
           <div
             className="font-sans-ui"
             style={{
-              fontSize: 11,
+              fontSize: 10,
               color: "#7AD896",
               fontWeight: 600,
               letterSpacing: "0.04em",
@@ -339,8 +335,8 @@ function DeviceMockup() {
           >
             <span
               style={{
-                width: 7,
-                height: 7,
+                width: 6,
+                height: 6,
                 borderRadius: "50%",
                 background: "#7AD896",
                 boxShadow: "0 0 8px rgba(122,216,150,0.6)",
@@ -351,7 +347,7 @@ function DeviceMockup() {
           <div
             className="font-sans-ui"
             style={{
-              fontSize: 11,
+              fontSize: 10,
               color: "rgba(244,236,224,0.6)",
               fontWeight: 500,
             }}

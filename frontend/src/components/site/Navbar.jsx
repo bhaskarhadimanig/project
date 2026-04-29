@@ -4,7 +4,6 @@ const APPLY_URL = "#apply"; // placeholder — to be replaced by user
 
 const DOCTOR_LINKS = [
   { label: "How It Works", href: "#how-it-works" },
-  { label: "Your Clusters", href: "#clusters" },
   { label: "Founding Network", href: "#founding-network" },
   { label: "FAQ", href: "#faq" },
   { label: "Apply", href: APPLY_URL },
@@ -55,6 +54,7 @@ export default function Navbar({ audience, setAudience }) {
           alignItems: "center",
           justifyContent: "space-between",
           gap: 24,
+          position: "relative",
         }}
       >
         <a
@@ -71,7 +71,16 @@ export default function Navbar({ audience, setAudience }) {
           Supercore Longevity
         </a>
 
-        <div className="sc-pill" data-testid="audience-switcher">
+        <div
+          className="sc-pill"
+          data-testid="audience-switcher"
+          style={{
+            position: "absolute",
+            left: "50%",
+            top: "50%",
+            transform: "translate(-50%, -50%)",
+          }}
+        >
           <button
             type="button"
             data-testid="audience-doctors-btn"
@@ -90,14 +99,7 @@ export default function Navbar({ audience, setAudience }) {
           </button>
         </div>
 
-        <a
-          href={APPLY_URL}
-          data-testid="nav-cta-apply"
-          className="sc-btn sc-btn-sm"
-          style={{ display: "inline-flex" }}
-        >
-          Join the Founding Network
-        </a>
+        <span aria-hidden style={{ width: 1 }} />
       </div>
 
       {/* Secondary nav */}
