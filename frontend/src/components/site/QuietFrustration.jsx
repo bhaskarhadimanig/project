@@ -5,19 +5,19 @@ const cards = [
     n: "01",
     title: "Records that quietly vanish.",
     body: "Your best 12-week patient came back two years later, and nothing of what worked the first time was anywhere on record. The protocol, the markers, the slow win — gone with the visit.",
-    img: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=1400&q=88",
+    img: "https://customer-assets.emergentagent.com/job_founding-network/artifacts/0jmcx13h_card%201.png",
   },
   {
     n: "02",
-    title: "Referrals in fragments.",
-    body: "The colleague who refers you cases sends six WhatsApp screenshots and a PDF. You stitch a story together from photographs of paper. Every time.",
-    img: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1400&q=88",
+    title: "The quiet part.",
+    body: "Your best program exists across a notes app, a WhatsApp thread, and memory. It has never lived anywhere it could be replicated.",
+    img: "https://customer-assets.emergentagent.com/job_founding-network/artifacts/0kr5rk04_card%202.jpg",
   },
   {
     n: "03",
     title: "The rigour goes unseen.",
     body: "Your most rigorous clinical work — the multi-system, multi-month, slow-and-careful kind — is the least visible thing about your practice. Nobody outside the room knows what you actually do.",
-    img: "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=1400&q=88",
+    img: "https://customer-assets.emergentagent.com/job_founding-network/artifacts/j4w1lqzs_card%203.jpg",
   },
 ];
 

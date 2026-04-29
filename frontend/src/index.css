@@ -65,40 +65,41 @@ html, body {
 }
 
 .font-serif-display {
-    font-family: 'Fraunces', 'Playfair Display', Georgia, serif;
-    font-weight: 500;
-    letter-spacing: -0.02em;
-    font-variation-settings: "opsz" 96, "SOFT" 50;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    font-feature-settings: "ss01", "cv11";
 }
 
 .font-sans-ui {
     font-family: 'Inter', sans-serif;
 }
 
-/* Yellow highlighter — sits behind inline text like a marker pen */
-.sc-hl {
-    position: relative;
-    display: inline;
-    padding: 0 0.18em;
-    background-image: linear-gradient(120deg, var(--sc-yellow) 0%, var(--sc-yellow) 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 60%;
-    background-position: 0 78%;
-    color: inherit;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
-}
-
-/* Italic accent — blue on light, yellow on dark */
+/* Italic emphasis uses Instrument Serif italic for a subtle editorial pop */
 .italic-emphasis {
+    font-family: 'Instrument Serif', Georgia, serif;
     font-style: italic;
-    color: var(--sc-blue);
-    font-family: 'Fraunces', serif;
     font-weight: 400;
+    color: var(--sc-blue);
+    letter-spacing: -0.01em;
 }
 .sc-dark .italic-emphasis,
 .sc-on-dark .italic-emphasis {
     color: var(--sc-yellow);
+}
+
+/* Yellow highlighter — sits behind inline text like a marker pen */
+.sc-hl {
+    position: relative;
+    display: inline;
+    padding: 0 0.16em;
+    background-image: linear-gradient(120deg, var(--sc-yellow) 0%, var(--sc-yellow) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 55%;
+    background-position: 0 80%;
+    color: inherit;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 }
 
 /* Reveal animations */
@@ -390,15 +391,14 @@ html, body {
     50% { opacity: 0.5; }
 }
 
-/* Stat numerals — big serif, deep ink */
+/* Stat numerals — big bold sans, tight tracking */
 .sc-stat-num {
-    font-family: 'Fraunces', serif;
-    font-size: clamp(48px, 7vw, 88px);
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(64px, 8.5vw, 112px);
     color: var(--sc-ink);
-    line-height: 0.95;
-    font-weight: 500;
-    letter-spacing: -0.025em;
-    font-variation-settings: "opsz" 96, "SOFT" 50;
+    line-height: 0.9;
+    font-weight: 700;
+    letter-spacing: -0.05em;
 }
 
 /* Big editorial card */
