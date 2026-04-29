@@ -1,0 +1,6 @@
+/* App-level styles intentionally minimal — see index.css for design system. */
+.App {
+    min-height: 100vh;
+    background: var(--sc-bg);
+    color: var(--sc-text);
+}
