@@ -383,11 +383,6 @@ export default function Hero() {
     >
       {/* Atmospheric glows */}
       <div className="sc-hero-glow" />
-      <div
-        aria-hidden
-        className="sc-grain"
-        style={{ position: "absolute", inset: 0, zIndex: 1 }}
-      />
 
       <div
         className="sc-container"

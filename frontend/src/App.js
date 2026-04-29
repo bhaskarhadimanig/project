@@ -5,7 +5,6 @@ import Hero from "@/components/site/Hero";
 import FoundingStats from "@/components/site/FoundingStats";
 import QuietFrustration from "@/components/site/QuietFrustration";
 import WhatSupercoreIs from "@/components/site/WhatSupercoreIs";
-import CinematicBanner from "@/components/site/CinematicBanner";
 import WhatThisChanges from "@/components/site/WhatThisChanges";
 import BiomarkerMarquee from "@/components/site/BiomarkerMarquee";
 import Clusters from "@/components/site/Clusters";
@@ -29,7 +28,6 @@ function App() {
           <FoundingStats />
           <QuietFrustration />
           <WhatSupercoreIs />
-          <CinematicBanner />
           <WhatThisChanges />
           <BiomarkerMarquee />
           <Clusters />
