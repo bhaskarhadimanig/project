@@ -15,12 +15,13 @@
     --sc-cream-3: #FFFAF1;
     --sc-ink: #1A1612;
     --sc-ink-soft: #4A3F33;
-    /* Vibrant terracotta accent (replaces muted gold) */
-    --sc-accent: #D87047;
-    --sc-accent-2: #E5A076;
-    --sc-accent-deep: #B8552F;
+    /* Vibrant Nike/Superpower orange — energetic primary */
+    --sc-accent: #FF5C28;
+    --sc-accent-2: #FF8A5C;
+    --sc-accent-deep: #E04518;
+    --sc-accent-soft: #FFB890;
     /* Legacy alias kept for compatibility */
-    --sc-amber: #D87047;
+    --sc-amber: #FF5C28;
 }
 
 * {
@@ -94,7 +95,7 @@ html, body {
     padding: 16px 30px;
     border: 1px solid var(--sc-accent);
     background: var(--sc-accent);
-    color: #FFF7EE;
+    color: #FFFFFF;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 600;
@@ -103,13 +104,13 @@ html, body {
     cursor: pointer;
     border-radius: 999px;
     transition: background-color 250ms ease, color 250ms ease, transform 250ms ease, box-shadow 250ms ease;
-    box-shadow: 0 6px 24px rgba(216, 112, 71, 0.18);
+    box-shadow: 0 8px 28px rgba(255, 92, 40, 0.3);
 }
 .sc-btn:hover {
     background: var(--sc-accent-deep);
     border-color: var(--sc-accent-deep);
     transform: translateY(-1px);
-    box-shadow: 0 10px 30px rgba(216, 112, 71, 0.32);
+    box-shadow: 0 12px 36px rgba(255, 92, 40, 0.45);
 }
 
 .sc-btn-ghost {

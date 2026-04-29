@@ -1,9 +1,368 @@
 import useReveal from "../../hooks/useReveal";
 
 const APPLY_URL = "#apply";
-// Warm-toned editorial portrait — the visual anchor of the page
-const HERO_BG =
-  "https://images.unsplash.com/photo-1517451330947-7809dead78d5?auto=format&fit=crop&w=2400&q=85";
+// Premium dark editorial portrait — confident, contemplative
+const DOCTOR_IMG =
+  "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1100&q=90";
+
+/**
+ * Tablet/phone-style device mockup with doctor portrait inside
+ * and a floating "Active Program" card overlapping bottom-right.
+ */
+function DeviceMockup() {
+  return (
+    <div
+      data-testid="hero-device-mockup"
+      style={{
+        position: "relative",
+        width: "100%",
+        maxWidth: 480,
+        margin: "0 auto",
+        aspectRatio: "9 / 13",
+      }}
+    >
+      {/* Ambient orange glow behind device */}
+      <div
+        aria-hidden
+        style={{
+          position: "absolute",
+          inset: "-20%",
+          background:
+            "radial-gradient(ellipse at center, rgba(255,92,40,0.32) 0%, rgba(255,92,40,0.10) 35%, rgba(15,14,12,0) 60%)",
+          filter: "blur(20px)",
+          zIndex: 0,
+        }}
+      />
+
+      {/* Device frame */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          borderRadius: 36,
+          padding: 2,
+          background:
+            "linear-gradient(160deg, rgba(255,92,40,0.55) 0%, rgba(255,92,40,0.12) 35%, rgba(255,138,92,0.4) 70%, rgba(255,92,40,0.18) 100%)",
+          boxShadow:
+            "0 40px 100px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,92,40,0.08)",
+          zIndex: 1,
+        }}
+      >
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            height: "100%",
+            borderRadius: 34,
+            background: "#0A0908",
+            overflow: "hidden",
+          }}
+        >
+          {/* Doctor portrait */}
+          <img
+            src={DOCTOR_IMG}
+            alt="Founding specialist on Supercore"
+            style={{
+              position: "absolute",
+              inset: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              objectPosition: "center 30%",
+              filter: "saturate(1.05) contrast(1.05)",
+            }}
+          />
+
+          {/* Tonal overlay */}
+          <div
+            aria-hidden
+            style={{
+              position: "absolute",
+              inset: 0,
+              background:
+                "linear-gradient(180deg, rgba(10,9,8,0.5) 0%, rgba(10,9,8,0.1) 30%, rgba(10,9,8,0.55) 100%)",
+            }}
+          />
+
+          {/* Top label */}
+          <div
+            style={{
+              position: "absolute",
+              top: 22,
+              left: 22,
+              display: "flex",
+              alignItems: "center",
+              gap: 10,
+              zIndex: 2,
+            }}
+          >
+            <span
+              style={{
+                width: 8,
+                height: 8,
+                borderRadius: "50%",
+                background: "#FF5C28",
+                boxShadow: "0 0 12px rgba(255,92,40,0.9)",
+              }}
+            />
+            <span
+              className="font-sans-ui"
+              style={{
+                fontSize: 11,
+                letterSpacing: "0.22em",
+                textTransform: "uppercase",
+                color: "#FF8A5C",
+                fontWeight: 700,
+              }}
+            >
+              Supercore
+            </span>
+          </div>
+
+          {/* Bottom-left identity badge on portrait */}
+          <div
+            style={{
+              position: "absolute",
+              left: 22,
+              bottom: 22,
+              right: 200,
+              zIndex: 2,
+            }}
+          >
+            <div
+              className="font-sans-ui"
+              style={{
+                fontSize: 10,
+                letterSpacing: "0.18em",
+                textTransform: "uppercase",
+                color: "rgba(244,236,224,0.65)",
+                fontWeight: 600,
+                marginBottom: 6,
+              }}
+            >
+              Founding Specialist
+            </div>
+            <div
+              className="font-serif-display"
+              style={{
+                fontSize: 20,
+                color: "#F4ECE0",
+                lineHeight: 1.2,
+                fontWeight: 500,
+                letterSpacing: "-0.01em",
+              }}
+            >
+              Dr. Arjun Shah
+            </div>
+            <div
+              className="font-sans-ui"
+              style={{
+                fontSize: 11,
+                color: "rgba(244,236,224,0.55)",
+                marginTop: 4,
+                letterSpacing: "0.04em",
+              }}
+            >
+              Functional Medicine · Mumbai
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Floating "Active Program" card */}
+      <div
+        data-testid="program-card-floating"
+        style={{
+          position: "absolute",
+          right: "-10%",
+          bottom: "8%",
+          width: "62%",
+          maxWidth: 280,
+          background: "#161310",
+          border: "1px solid rgba(255,92,40,0.32)",
+          borderRadius: 20,
+          padding: 22,
+          boxShadow:
+            "0 24px 60px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,92,40,0.05)",
+          zIndex: 3,
+          backdropFilter: "blur(8px)",
+          transform: "rotate(2deg)",
+        }}
+      >
+        <div
+          className="font-sans-ui"
+          style={{
+            fontSize: 10,
+            letterSpacing: "0.2em",
+            textTransform: "uppercase",
+            color: "#FF8A5C",
+            fontWeight: 700,
+            marginBottom: 12,
+          }}
+        >
+          Active Program
+        </div>
+        <div
+          className="font-serif-display"
+          style={{
+            fontSize: 22,
+            color: "#F4ECE0",
+            lineHeight: 1.2,
+            margin: 0,
+            fontWeight: 500,
+            letterSpacing: "-0.01em",
+          }}
+        >
+          Core Longevity
+          <br />
+          Protocol
+        </div>
+
+        <div
+          style={{
+            marginTop: 16,
+            display: "flex",
+            alignItems: "center",
+            gap: 10,
+          }}
+        >
+          <span
+            className="font-sans-ui"
+            style={{
+              fontSize: 10,
+              fontWeight: 700,
+              letterSpacing: "0.16em",
+              color: "#FF8A5C",
+              border: "1px solid rgba(255,92,40,0.5)",
+              borderRadius: 6,
+              padding: "5px 9px",
+            }}
+          >
+            12 WEEKS
+          </span>
+          <span
+            className="font-sans-ui"
+            style={{
+              fontSize: 12,
+              color: "rgba(244,236,224,0.78)",
+              fontWeight: 500,
+            }}
+          >
+            Dr. Arjun Shah
+          </span>
+        </div>
+
+        <div
+          className="font-sans-ui"
+          style={{
+            marginTop: 18,
+            fontSize: 9.5,
+            letterSpacing: "0.16em",
+            textTransform: "uppercase",
+            color: "rgba(244,236,224,0.5)",
+            fontWeight: 600,
+          }}
+        >
+          Cluster Score · 12W trajectory
+        </div>
+
+        {/* Mini chart */}
+        <svg
+          viewBox="0 0 220 70"
+          width="100%"
+          height="60"
+          style={{ marginTop: 8, display: "block" }}
+        >
+          <defs>
+            <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#FF5C28" stopOpacity="0.4" />
+              <stop offset="100%" stopColor="#FF5C28" stopOpacity="0" />
+            </linearGradient>
+          </defs>
+          {/* Target dashed line */}
+          <line
+            x1="0"
+            y1="14"
+            x2="220"
+            y2="14"
+            stroke="rgba(244,236,224,0.25)"
+            strokeWidth="1"
+            strokeDasharray="3 4"
+          />
+          <text
+            x="218"
+            y="11"
+            textAnchor="end"
+            fontSize="8"
+            fill="rgba(244,236,224,0.55)"
+            fontFamily="Inter, sans-serif"
+            letterSpacing="1.2"
+          >
+            TARGET
+          </text>
+          {/* Filled curve */}
+          <path
+            d="M0,62 C40,58 70,52 100,42 S160,24 220,18 L220,70 L0,70 Z"
+            fill="url(#chartFill)"
+          />
+          {/* Curve line */}
+          <path
+            d="M0,62 C40,58 70,52 100,42 S160,24 220,18"
+            stroke="#FF8A5C"
+            strokeWidth="1.6"
+            fill="none"
+            strokeLinecap="round"
+          />
+          {/* End dot */}
+          <circle cx="220" cy="18" r="3" fill="#FF8A5C" />
+        </svg>
+
+        <div
+          style={{
+            marginTop: 14,
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <div
+            className="font-sans-ui"
+            style={{
+              fontSize: 11,
+              color: "#7AD896",
+              fontWeight: 600,
+              letterSpacing: "0.04em",
+              display: "flex",
+              alignItems: "center",
+              gap: 6,
+            }}
+          >
+            <span
+              style={{
+                width: 7,
+                height: 7,
+                borderRadius: "50%",
+                background: "#7AD896",
+                boxShadow: "0 0 8px rgba(122,216,150,0.6)",
+              }}
+            />
+            On Track
+          </div>
+          <div
+            className="font-sans-ui"
+            style={{
+              fontSize: 11,
+              color: "rgba(244,236,224,0.6)",
+              fontWeight: 500,
+            }}
+          >
+            Week 7 of 12
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function Hero() {
   const ref = useReveal();
@@ -14,182 +373,131 @@ export default function Hero() {
       style={{
         minHeight: "100vh",
         position: "relative",
-        backgroundColor: "#0F0E0C",
+        backgroundColor: "#0A0908",
         overflow: "hidden",
         display: "flex",
-        alignItems: "flex-end",
+        alignItems: "center",
         paddingTop: 140,
-        paddingBottom: 80,
+        paddingBottom: 100,
       }}
     >
-      {/* Full-bleed hero image */}
-      <div
-        aria-hidden
-        style={{
-          position: "absolute",
-          inset: 0,
-          backgroundImage: `url(${HERO_BG})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center 30%",
-          zIndex: 0,
-        }}
-      />
-      {/* Warm tonal overlay — terracotta/peach wash */}
-      <div
-        aria-hidden
-        style={{
-          position: "absolute",
-          inset: 0,
-          background:
-            "linear-gradient(180deg, rgba(15,14,12,0.55) 0%, rgba(15,14,12,0.35) 35%, rgba(15,14,12,0.85) 100%), radial-gradient(ellipse at 75% 40%, rgba(216,112,71,0.42) 0%, rgba(216,112,71,0.15) 35%, rgba(15,14,12,0) 65%)",
-          zIndex: 1,
-        }}
-      />
+      {/* Atmospheric glows */}
+      <div className="sc-hero-glow" />
       <div
         aria-hidden
         className="sc-grain"
-        style={{ position: "absolute", inset: 0, zIndex: 2 }}
+        style={{ position: "absolute", inset: 0, zIndex: 1 }}
       />
 
-      {/* Content */}
       <div
         className="sc-container"
         style={{ width: "100%", position: "relative", zIndex: 3 }}
       >
-        <div ref={ref} className="sc-reveal" style={{ maxWidth: 920 }}>
-          <div style={{ marginBottom: 32 }}>
-            <span className="sc-tag" data-testid="hero-tag">
-              <span className="dot" />
-              Founding Network — Now Inviting Specialists
-            </span>
-          </div>
-
-          <h1
-            className="font-serif-display"
-            style={{
-              color: "#F4ECE0",
-              fontSize: "clamp(44px, 8.4vw, 108px)",
-              lineHeight: 1.02,
-              margin: 0,
-              fontWeight: 500,
-              letterSpacing: "-0.025em",
-            }}
-          >
-            Longevity medicine
-            <br />
-            is being built{" "}
-            <em
+        <div
+          ref={ref}
+          className="sc-reveal"
+          style={{
+            display: "grid",
+            gridTemplateColumns: "minmax(0, 1.05fr) minmax(0, 1fr)",
+            gap: 80,
+            alignItems: "center",
+          }}
+          data-testid="hero-grid"
+        >
+          {/* LEFT — content */}
+          <div style={{ maxWidth: 640 }}>
+            <h1
+              className="font-serif-display"
               style={{
-                color: "#F2A57E",
-                fontStyle: "italic",
+                color: "#F4ECE0",
+                fontSize: "clamp(44px, 6.6vw, 84px)",
+                lineHeight: 1.04,
+                margin: 0,
+                fontWeight: 500,
+                letterSpacing: "-0.025em",
+              }}
+            >
+              Longevity medicine
+              <br />
+              is being built{" "}
+              <em
+                style={{
+                  color: "#FF8A5C",
+                  fontStyle: "italic",
+                  fontWeight: 400,
+                }}
+              >
+                right now
+              </em>
+              .
+              <br />
+              By specialists like you.
+            </h1>
+
+            <p
+              className="font-sans-ui"
+              style={{
+                fontSize: 19,
+                color: "rgba(244,236,224,0.75)",
+                lineHeight: 1.65,
+                maxWidth: 540,
+                marginTop: 32,
+                marginBottom: 0,
                 fontWeight: 400,
               }}
             >
-              right now
-            </em>
-            .
-            <br />
-            By specialists like you.
-          </h1>
+              The infrastructure to practise it — and prove it — hasn't existed.
+              Until now.
+            </p>
 
-          <p
-            className="font-sans-ui"
-            style={{
-              fontSize: 20,
-              color: "rgba(244,236,224,0.82)",
-              lineHeight: 1.6,
-              maxWidth: 620,
-              marginTop: 36,
-              marginBottom: 0,
-              fontWeight: 400,
-            }}
-          >
-            The infrastructure to practise it — and prove it — hasn't existed.
-            Until now.
-          </p>
-
-          <div
-            style={{
-              marginTop: 44,
-              display: "flex",
-              gap: 16,
-              flexWrap: "wrap",
-              alignItems: "center",
-            }}
-          >
-            <a href={APPLY_URL} data-testid="hero-cta-apply" className="sc-btn">
-              Join the Founding Network
-            </a>
-            <a
-              href="#how-it-works"
-              data-testid="hero-cta-secondary"
-              className="sc-btn-ghost"
+            <div
+              style={{
+                marginTop: 40,
+                display: "flex",
+                gap: 16,
+                flexWrap: "wrap",
+                alignItems: "center",
+              }}
             >
-              See how it works
-            </a>
+              <a href={APPLY_URL} data-testid="hero-cta-apply" className="sc-btn">
+                Join the Founding Network
+              </a>
+              <a
+                href="#how-it-works"
+                data-testid="hero-cta-secondary"
+                className="sc-btn-ghost"
+              >
+                See how it works
+              </a>
+            </div>
           </div>
 
-          {/* Inline credibility — quietly anchored at bottom-left of hero */}
+          {/* RIGHT — device mockup */}
           <div
             style={{
-              marginTop: 80,
               display: "flex",
-              gap: 56,
-              flexWrap: "wrap",
-              alignItems: "flex-end",
+              alignItems: "center",
+              justifyContent: "center",
             }}
           >
-            {[
-              { num: "24", label: "Health clusters" },
-              { num: "3", label: "Cluster layers" },
-              { num: "12wk", label: "Program format" },
-              { num: "₹25–60k", label: "Per program" },
-            ].map((s) => (
-              <div key={s.label}>
-                <div
-                  className="font-serif-display"
-                  style={{
-                    fontSize: "clamp(28px, 3.4vw, 40px)",
-                    color: "#F4ECE0",
-                    lineHeight: 1,
-                    fontWeight: 500,
-                    letterSpacing: "-0.015em",
-                  }}
-                >
-                  {s.num}
-                </div>
-                <div
-                  className="font-sans-ui"
-                  style={{
-                    fontSize: 12,
-                    color: "rgba(244,236,224,0.6)",
-                    marginTop: 10,
-                    letterSpacing: "0.1em",
-                    textTransform: "uppercase",
-                    fontWeight: 500,
-                  }}
-                >
-                  {s.label}
-                </div>
-              </div>
-            ))}
+            <DeviceMockup />
           </div>
         </div>
       </div>
 
-      {/* Attribution caption */}
+      {/* Attribution */}
       <div
         className="font-sans-ui"
         style={{
           position: "absolute",
           bottom: 28,
+          left: 80,
           right: 80,
           fontSize: 11,
-          color: "rgba(244,236,224,0.4)",
-          maxWidth: 380,
+          color: "rgba(244,236,224,0.35)",
+          maxWidth: 680,
           lineHeight: 1.6,
           zIndex: 3,
-          textAlign: "right",
           letterSpacing: "0.04em",
         }}
       >
@@ -198,10 +506,19 @@ export default function Hero() {
       </div>
 
       <style>{`
+        @media (max-width: 1000px) {
+          [data-testid="hero-grid"] {
+            grid-template-columns: 1fr !important;
+            gap: 64px !important;
+          }
+          [data-testid="hero-device-mockup"] {
+            max-width: 380px !important;
+          }
+        }
         @media (max-width: 768px) {
           [data-testid="section-hero"] {
-            padding-top: 110px !important;
-            padding-bottom: 64px !important;
+            padding-top: 120px !important;
+            padding-bottom: 80px !important;
           }
         }
       `}</style>
