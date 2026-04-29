@@ -1,63 +1,51 @@
-# Supercore Longevity — Marketing Site
+# Supercore Longevity — PRD
 
-## Original Problem Statement
-Single-page marketing website for Supercore Longevity (supercorelongevity.com). Dual-audience (doctors / patients), with the doctor view as the default. Primary CTA: "Join the Founding Network." Premium dark aesthetic in line with superpower.com, lucis.life, humanauthealth.com, biograph.com, gethealthspan.com. Built with React (CRA) + Tailwind (env: FastAPI/Mongo unused for this static site, retained as scaffolding).
+## Problem Statement
+Single-page marketing site for Supercore Longevity (supercorelongevity.com). Dual audience — doctors (default) and patients. Primary CTA: get specialists to click "Join the Founding Network." Premium, energetic, gethealthspan.com-inspired design.
 
 ## Stack
-- Frontend: React 19 (CRA + craco), Tailwind, Google Fonts (Playfair Display + Inter)
-- No backend integrations (per user — CTAs are placeholder anchors; user will plug real URL later)
+- Next.js / React + Tailwind CSS
+- Fonts: Inter 700 (headings, -0.035em tracking), Instrument Serif / Fraunces (italic accents only)
+- Palette: Cream `#FAF8F2`, Navy `#0A1628`, Lime `#DAFF6B`, Blue `#2563EB`
+- Scroll animations via IntersectionObserver (`/app/frontend/src/hooks/useReveal.js`)
 
-## User Personas
-1. **Specialist physician (primary)** — gut/metabolic/hormonal/sleep/etc specialists evaluating whether to join a founding longevity network. Reads doctor view by default.
-2. **Patient (secondary)** — placeholder coming-soon view; user will replace with real URL.
+## Architecture
+/app/frontend/src/
+├── App.js, index.css (theme variables + utility classes)
+└── components/site/
+    ├── Navbar.jsx
+    ├── Hero.jsx, HeroMarquee.jsx
+    ├── FoundingStats.jsx
+    ├── QuietFrustration.jsx (sticky card scroll)
+    ├── WhatSupercoreIs.jsx (3-tab interactive — DONE)
+    ├── WhatThisChanges.jsx, Clusters.jsx, ProgramShowcase.jsx
+    ├── SpecialistsMosaic.jsx, FirstNamed.jsx, CinematicBanner.jsx
+    ├── MovementStatement.jsx, Footer.jsx
+    └── PatientView.jsx
 
-## Design System (locked)
-- Backgrounds: #0D0D0D / #141414 / #1A1A1A
-- Borders: #2A2A2A
-- Text: #F5F0E8 (with 25–85% opacity tiers)
-- Accent: #C9A96E (warm amber)
-- Fonts: Playfair Display (display, italic accents), Inter (UI/body)
-- Layout: 1280px max, 80px desktop / 24px mobile padding, 120px section padding
+## Completed (by date)
+- Initial scaffolding, routing, theme (Cream/Navy/Lime/Blue)
+- Hero with tablet mockup + floating program card
+- Auto-scroll marquee
+- Stats band (70+ Years · 24 Clusters · IP Filed · First 50)
+- Quiet Frustration sticky card scroll (3 cards)
+- **Feb 2026 — Section 4 "What Supercore Is" 3-tab interactive**
+  - Tab 01 Home: Cluster selector pills visual
+  - Tab 02 Ownership: Two-column Yours/Supercore matrix + italic closer
+  - Tab 03 Permanence: Cluster score chart, Longevity score transition, Biological Timeline
+  - Dark-navy bg with lime/blue radial glows, Inter 700 headings, Instrument Serif italics, data-testids on all tabs/panels, responsive collapse at 900px
 
-## What's Been Implemented (2025-12)
-- Sticky navbar (transparent → solid #141414 on scroll)
-- Audience switcher pill (For Doctors / For Patients) — toggles secondary nav, page content, and footer legal links
-- Secondary nav strip with audience-specific links
-- **Doctor view sections (refreshed visual energy):**
-  - Hero with warm amber radial glow, editorial doctor portrait card, "Founding Network" tag pill, hero stat strip (24 / 3 / 12wk)
-  - Biomarker scrolling marquee (cluster names + biomarker shorthand)
-  - Quiet Frustration (3 blocks + amber divider + italic close)
-  - What Supercore Is — three pillars with amber numerals
-  - What This Changes — 2-col with portrait "Field note" photo card
-  - **Program Showcase (LIGHT CREAM section)** — three editorial photo cards walking through Week 0 / 1–11 / 12 cadence
-  - Find Your Clusters — 24 sharp chips in 3 grouped layers
-  - **Specialists Mosaic** — 6 photo tiles (city + cluster) in asymmetric grid
-  - Be Among the First Named with atmospheric background imagery
-  - Movement Statement (full viewport, staggered reveal)
-- 8+ contextual editorial photos via Unsplash CDN (verified loading)
-- IntersectionObserver-based reveal/stagger animations + scrolling marquee
-- Mobile responsive (collapses to single-column at <768px / <900px / <1000px)
-- Light + dark section alternation for natural rhythm
-- All interactive/key elements have `data-testid` attributes
+## Roadmap
+### P1
+- Theme consistency audit of sections below Section 4 (WhatThisChanges, Clusters, ProgramShowcase, SpecialistsMosaic, FirstNamed, CinematicBanner, MovementStatement, Footer) — align to Cream/Navy/Lime/Blue palette + Inter 700
 
-## Backlog / Known Placeholders
-- **P0** — Replace placeholder anchors (`#apply`, `#contact`, etc.) with real URLs once user provides them
-- **P1** — Build real Patient experience (currently coming-soon)
-- **P1** — Wire FAQ content (placeholder anchor only)
-- **P2** — Apply page or modal form (user said "URL later", currently scrolls to MovementStatement section which has anchor `#apply`)
-- **P2** — Doctor application form / lead capture (could be a future MongoDB-backed feature)
-- **P2** — SEO meta + OG image / favicon
-- **P2** — Analytics events on CTA clicks (PostHog already loaded via index.html)
+### P2 (on hold per user)
+- Audience switcher (Doctors ↔ Patients) — user explicitly said NOT to work on this yet
 
-## Files of Note
-- `frontend/src/App.js` — root, audience state
-- `frontend/src/components/site/Navbar.jsx` — sticky nav + pill switcher
-- `frontend/src/components/site/Hero.jsx` … `MovementStatement.jsx` — section components
-- `frontend/src/components/site/PatientView.jsx` — placeholder patient view
-- `frontend/src/components/site/Footer.jsx` — audience-aware footer
-- `frontend/src/hooks/useReveal.js` — IntersectionObserver hook
-- `frontend/src/index.css` — design system tokens + reusable classes (`sc-btn`, `sc-pill`, `sc-chip`, `sc-section`, `sc-container`, `sc-reveal`, `sc-stagger`)
+### Backlog
+- Regenerate Quiet Frustration section images (higher-fidelity photography)
+- Wire "Join the Founding Network" CTA to backend lead-capture
+- Standardize remaining inline styles in older components to index.css utility classes
 
-## Next Action Items
-1. User shares production URLs for "Join the Founding Network", FAQ, Patient links → swap `APPLY_URL` constant in Navbar/Hero/MovementStatement/PatientView and href values in Footer
-2. Decide: keep placeholder Patient page or commission full Patient view content
+## Known Issues
+None. Section 4 verified rendering correctly across all 3 tabs.
