@@ -40,6 +40,12 @@ Single-page marketing site for Supercore Longevity (supercorelongevity.com). Dua
   - Collapses to 1 column at ≤1080px
 - **Feb 2026 — Clusters section typography upgrade** — 3 group names (Amplifiers / Core Systems / Condition-Based) now render as Inter 700 ~clamp(26px,2.4vw,34px) headings with navy `#0A1628` and tight tracking; subtitles slightly enlarged to 15px / 1.55 line-height for legibility
 - **Feb 2026 — Removed `ProgramShowcase` ("Inside a Supercore Program") section** — App.js no longer imports or renders it; Clusters now flows directly into Founding Cohort (SpecialistsMosaic)
+- **Feb 2026 — MovementStatement closure section redesigned (high-impact)**
+  - Two-column layout: left tilted cream "Founder's Note" letter card with lime top-accent bar, flowing 5-line body, italic serif sign-off "— The Supercore Team", hover tilt-lift interaction
+  - Right: "THE MOVEMENT" eyebrow, huge Inter 700 "With Supercore," headline, and the final line *"that changes."* highlighted on a lime-yellow pill block with glow (last-line highlight per user ask)
+  - Glowing lime pill CTA "Join the Founding Network →" with dark inner arrow circle + "LIMITED · 50 SEATS" meta chip
+  - Dark navy background with ambient lime + blue radial glows and subtle noise grain
+  - Responsive: collapses to single column at ≤1024px, tighter letter padding at ≤640px
 
 ## Roadmap
 ### P1
