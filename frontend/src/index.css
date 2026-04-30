@@ -394,7 +394,7 @@ html, body {
 /* Stat numerals — big bold sans, tight tracking */
 .sc-stat-num {
     font-family: 'Inter', sans-serif;
-    font-size: clamp(64px, 8.5vw, 112px);
+    font-size: clamp(54px, 7.2vw, 95px);
     color: var(--sc-ink);
     line-height: 0.9;
     font-weight: 700;

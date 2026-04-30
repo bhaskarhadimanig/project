@@ -127,13 +127,13 @@ export default function MovementStatement() {
               className="sc-signature"
               data-testid="movement-signature"
               style={{
-                fontFamily: "'Caveat', 'Dancing Script', cursive",
-                fontSize: "clamp(44px, 4.4vw, 64px)",
+                fontFamily: "'Italianno', 'Instrument Serif', cursive",
+                fontSize: "clamp(36px, 3.4vw, 52px)",
                 color: "#0A1628",
-                fontWeight: 600,
+                fontWeight: 400,
                 lineHeight: 1,
-                letterSpacing: "-0.01em",
-                transform: "rotate(-2deg)",
+                letterSpacing: "0.005em",
+                transform: "rotate(-1.5deg)",
                 transformOrigin: "left bottom",
                 display: "inline-block",
               }}

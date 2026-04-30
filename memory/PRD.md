@@ -51,6 +51,11 @@ Single-page marketing site for Supercore Longevity (supercorelongevity.com). Dua
 - **Feb 2026 — FirstNamed section refresh**
   - New title: "This is where the next era of medicine *gets its names*." (Inter 700 + Instrument Serif italic accent)
   - New banner photograph generated via Nano Banana — editorial Monocle-grade portrait of a South Asian specialist (~40s) at a warm walnut desk in a designed private study, late-afternoon natural window light, calm absorbed expression, deliberate left-side shadow negative space for text overlay. Saved at `/app/frontend/public/generated/first-named-portrait.png`
+- **Feb 2026 — Round of typography & layout tweaks**
+  - FoundingStats numerals reduced 15% (`.sc-stat-num` clamp 64/8.5vw/112 → 54/7.2vw/95)
+  - QuietFrustration cards height -20% (440→352), body copy upgraded (17px / 0.85 alpha / weight 450) for legibility
+  - Removed `BiomarkerMarquee` between WhatThisChanges and Clusters (scroll line at bottom of "Same clinical work" section)
+  - Closure-section signature font swapped Caveat → **Italianno** (elegant copperplate signature script), size reduced clamp(36/3.4vw/52), refined 1.5° tilt — replaces the childish handwriting with a classy, modern look
 
 ## Roadmap
 ### P1

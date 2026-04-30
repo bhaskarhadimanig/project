@@ -97,7 +97,7 @@ export default function QuietFrustration() {
                   overflow: "hidden",
                   display: "grid",
                   gridTemplateColumns: "minmax(0, 1.05fr) minmax(0, 1fr)",
-                  minHeight: 440,
+                  minHeight: 352,
                   boxShadow:
                     "0 30px 80px -20px rgba(10,22,40,0.18), 0 0 0 1px rgba(10,22,40,0.03)",
                 }}
@@ -106,11 +106,11 @@ export default function QuietFrustration() {
                 {/* LEFT — content */}
                 <div
                   style={{
-                    padding: "52px 52px 48px",
+                    padding: "44px 48px 40px",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
-                    gap: 28,
+                    gap: 24,
                   }}
                   className="sc-frust-card-text"
                 >
@@ -126,7 +126,7 @@ export default function QuietFrustration() {
                         textTransform: "uppercase",
                         color: "#2563EB",
                         fontWeight: 700,
-                        marginBottom: 24,
+                        marginBottom: 20,
                       }}
                     >
                       <span
@@ -155,11 +155,11 @@ export default function QuietFrustration() {
                   <p
                     className="font-sans-ui"
                     style={{
-                      fontSize: 16,
-                      lineHeight: 1.7,
-                      color: "rgba(10,22,40,0.68)",
+                      fontSize: 17,
+                      lineHeight: 1.65,
+                      color: "rgba(10,22,40,0.85)",
                       margin: 0,
-                      fontWeight: 400,
+                      fontWeight: 450,
                       maxWidth: 480,
                     }}
                   >
@@ -174,7 +174,7 @@ export default function QuietFrustration() {
                     backgroundImage: `url(${c.img})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    minHeight: 440,
+                    minHeight: 352,
                   }}
                 />
               </article>

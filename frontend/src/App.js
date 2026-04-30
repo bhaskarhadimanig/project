@@ -7,7 +7,6 @@ import FoundingStats from "@/components/site/FoundingStats";
 import QuietFrustration from "@/components/site/QuietFrustration";
 import WhatSupercoreIs from "@/components/site/WhatSupercoreIs";
 import WhatThisChanges from "@/components/site/WhatThisChanges";
-import BiomarkerMarquee from "@/components/site/BiomarkerMarquee";
 import Clusters from "@/components/site/Clusters";
 import SpecialistsMosaic from "@/components/site/SpecialistsMosaic";
 import FirstNamed from "@/components/site/FirstNamed";
@@ -30,7 +29,6 @@ function App() {
           <QuietFrustration />
           <WhatSupercoreIs />
           <WhatThisChanges />
-          <BiomarkerMarquee />
           <Clusters />
           <SpecialistsMosaic />
           <FirstNamed />
