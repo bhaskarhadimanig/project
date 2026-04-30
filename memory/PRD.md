@@ -40,12 +40,17 @@ Single-page marketing site for Supercore Longevity (supercorelongevity.com). Dua
   - Collapses to 1 column at ≤1080px
 - **Feb 2026 — Clusters section typography upgrade** — 3 group names (Amplifiers / Core Systems / Condition-Based) now render as Inter 700 ~clamp(26px,2.4vw,34px) headings with navy `#0A1628` and tight tracking; subtitles slightly enlarged to 15px / 1.55 line-height for legibility
 - **Feb 2026 — Removed `ProgramShowcase` ("Inside a Supercore Program") section** — App.js no longer imports or renders it; Clusters now flows directly into Founding Cohort (SpecialistsMosaic)
-- **Feb 2026 — MovementStatement closure section redesigned (high-impact)**
-  - Two-column layout: left tilted cream "Founder's Note" letter card with lime top-accent bar, flowing 5-line body, italic serif sign-off "— The Supercore Team", hover tilt-lift interaction
-  - Right: "THE MOVEMENT" eyebrow, huge Inter 700 "With Supercore," headline, and the final line *"that changes."* highlighted on a lime-yellow pill block with glow (last-line highlight per user ask)
-  - Glowing lime pill CTA "Join the Founding Network →" with dark inner arrow circle + "LIMITED · 50 SEATS" meta chip
-  - Dark navy background with ambient lime + blue radial glows and subtle noise grain
-  - Responsive: collapses to single column at ≤1024px, tighter letter padding at ≤640px
+- **Feb 2026 — MovementStatement closure section redesigned (high-impact, v2 — letter card)**
+  - Replaced two-column layout with a single full-width "Founder's Letter" card matching user's reference image
+  - Blue gradient background (#E5EBF7 → #8FB5EE) on a navy section, dark navy ink type
+  - Eyebrow: "A LETTER TO THE FOUNDING PRACTITIONERS" with lime-glowing dot
+  - Flowing Instrument Serif italic emphasis on highlighted closer line: *"The first 50 names will define the next decade of longevity medicine in India."*
+  - Caveat-script handwritten signature ("The Supercore Team") with subtle rotation, italic "FOUNDERS · SUPERCORE LONGEVITY" subtitle below
+  - Bottom divider row: navy pill CTA "Join the Founding Network →" with lime arrow circle + "LIMITED · 50 FOUNDING SEATS" meta chip
+  - Caveat font added to Google Fonts link in `index.html`
+- **Feb 2026 — FirstNamed section refresh**
+  - New title: "This is where the next era of medicine *gets its names*." (Inter 700 + Instrument Serif italic accent)
+  - New banner photograph generated via Nano Banana — editorial Monocle-grade portrait of a South Asian specialist (~40s) at a warm walnut desk in a designed private study, late-afternoon natural window light, calm absorbed expression, deliberate left-side shadow negative space for text overlay. Saved at `/app/frontend/public/generated/first-named-portrait.png`
 
 ## Roadmap
 ### P1

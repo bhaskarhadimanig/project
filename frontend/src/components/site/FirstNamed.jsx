@@ -1,7 +1,6 @@
 import useReveal from "../../hooks/useReveal";
 
-const BANNER =
-  "https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=2400&q=85";
+const BANNER = "/generated/first-named-portrait.png";
 
 const paragraphs = [
   "Longevity medicine in India is at an inflection point — about the same place functional medicine was in the US fifteen years ago. The specialists who plant their flag now will be the names the next generation of doctors refers to.",
@@ -56,19 +55,28 @@ export default function FirstNamed() {
             <h2
               className="font-serif-display"
               style={{
-                fontSize: "clamp(38px, 5.4vw, 68px)",
+                fontSize: "clamp(38px, 5.4vw, 72px)",
                 color: "#FFFFFF",
                 margin: 0,
-                lineHeight: 1.05,
-                fontWeight: 500,
-                letterSpacing: "-0.025em",
+                lineHeight: 1.04,
+                fontWeight: 700,
+                letterSpacing: "-0.035em",
+                maxWidth: 820,
               }}
             >
-              First-wave moves don't{" "}
-              <em style={{ color: "#DAFF6B", fontStyle: "italic" }}>
-                come around
-              </em>{" "}
-              twice.
+              This is where the next era of medicine{" "}
+              <em
+                style={{
+                  fontFamily: "'Instrument Serif', serif",
+                  color: "#DAFF6B",
+                  fontStyle: "italic",
+                  fontWeight: 400,
+                  letterSpacing: "-0.01em",
+                }}
+              >
+                gets its names
+              </em>
+              .
             </h2>
           </div>
         </div>
