@@ -402,7 +402,7 @@ export default function Hero() {
               className="font-serif-display"
               style={{
                 color: "#FFFFFF",
-              fontSize: "clamp(36px, 5.4vw, 68px)",
+              fontSize: "clamp(27px, 4vw, 51px)",
                 lineHeight: 1.04,
                 margin: 0,
                 fontWeight: 500,
@@ -478,12 +478,13 @@ export default function Hero() {
           bottom: 28,
           left: 80,
           right: 80,
-          fontSize: 11,
-          color: "rgba(255,255,255,0.35)",
-          maxWidth: 680,
-          lineHeight: 1.6,
+          fontSize: 15,
+          color: "rgba(255,255,255,0.65)",
+          maxWidth: 760,
+          lineHeight: 1.55,
           zIndex: 3,
-          letterSpacing: "0.04em",
+          letterSpacing: "0.01em",
+          fontWeight: 400,
         }}
       >
         Shaped through conversations with functional medicine and longevity

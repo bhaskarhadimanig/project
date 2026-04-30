@@ -64,8 +64,8 @@ export default function MovementStatement() {
           <div
             className="font-serif-display"
             style={{
-              fontSize: "clamp(24px, 2.4vw, 38px)",
-              lineHeight: 1.45,
+              fontSize: "clamp(19px, 1.9vw, 30px)",
+              lineHeight: 1.5,
               color: "#0A1628",
               fontWeight: 500,
               letterSpacing: "-0.018em",
@@ -100,8 +100,8 @@ export default function MovementStatement() {
                 margin: "40px 0 0",
                 fontFamily: "'Instrument Serif', serif",
                 fontStyle: "italic",
-                fontSize: "clamp(34px, 3.6vw, 56px)",
-                lineHeight: 1.1,
+                fontSize: "clamp(27px, 2.9vw, 45px)",
+                lineHeight: 1.15,
                 fontWeight: 400,
                 color: "#0A1628",
                 letterSpacing: "-0.02em",
@@ -113,7 +113,7 @@ export default function MovementStatement() {
             <p
               style={{
                 margin: "32px 0 0",
-                fontSize: "clamp(20px, 1.6vw, 24px)",
+                fontSize: "clamp(16px, 1.3vw, 19px)",
                 fontWeight: 500,
               }}
             >

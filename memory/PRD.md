@@ -56,6 +56,13 @@ Single-page marketing site for Supercore Longevity (supercorelongevity.com). Dua
   - QuietFrustration cards height -20% (440→352), body copy upgraded (17px / 0.85 alpha / weight 450) for legibility
   - Removed `BiomarkerMarquee` between WhatThisChanges and Clusters (scroll line at bottom of "Same clinical work" section)
   - Closure-section signature font swapped Caveat → **Italianno** (elegant copperplate signature script), size reduced clamp(36/3.4vw/52), refined 1.5° tilt — replaces the childish handwriting with a classy, modern look
+- **Feb 2026 — Final polish round**
+  - Hero headline -25% (clamp 27/4vw/51); attribution sub-line +40% size (11→15), color 0.35→0.65, weight 400 — much more visible
+  - FoundingStats per-stat descriptions +25% size (14→17), better color (0.78), weight 450 — legibility lift
+  - **Section 5 (WhatThisChanges) regenerated images on amber accent** — all 3 cards re-prompted via Nano Banana with strict edge-to-edge minimal composition: (1) Cluster pill + 3 specialist names + dots; (2) ₹45,000 centerpiece + protocol label + progress bar; (3) 3 resource rows with amber icons/underlines and centre glow
+  - Section 5 copy shortened per new user specs (Discovery / Economics / Head start)
+  - QuietFrustration card gaps -38% (paddingBottom 18vh → 11vh), tighter sticky stagger (top 124+14i → 100+12i)
+  - MovementStatement letter copy reduced ~20% across body (clamp 19/1.9vw/30), closer (clamp 27/2.9vw/45), and "To your work," (clamp 16/1.3vw/19)
 
 ## Roadmap
 ### P1

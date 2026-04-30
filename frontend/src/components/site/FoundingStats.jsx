@@ -100,11 +100,11 @@ export default function FoundingStats() {
               <p
                 className="font-sans-ui"
                 style={{
-                  fontSize: 14,
+                  fontSize: 17,
                   lineHeight: 1.6,
-                  color: "rgba(10,22,40,0.55)",
+                  color: "rgba(10,22,40,0.78)",
                   margin: 0,
-                  fontWeight: 400,
+                  fontWeight: 450,
                 }}
               >
                 {s.body}

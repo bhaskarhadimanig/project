@@ -82,14 +82,14 @@ export default function QuietFrustration() {
               key={c.n}
               data-testid={`frustration-wrapper-${i}`}
               style={{
-                paddingBottom: i < cards.length - 1 ? "18vh" : 0,
+                paddingBottom: i < cards.length - 1 ? "11vh" : 0,
               }}
             >
               <article
                 data-testid={`frustration-card-${i}`}
                 style={{
                   position: "sticky",
-                  top: 124 + i * 14,
+                  top: 100 + i * 12,
                   zIndex: 10 + i,
                   background: "#FFFFFF",
                   border: "1px solid rgba(10,22,40,0.06)",
